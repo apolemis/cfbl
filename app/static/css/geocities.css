@@ -583,6 +583,297 @@ table {
 ::-webkit-scrollbar-track { background: #C0C0C0; border: 1px solid #808080; }
 ::-webkit-scrollbar-thumb { background: #808080; border: 2px outset #C0C0C0; }
 
+/* ================================
+   SALARY CAP TRACKER
+   ================================ */
+
+.cap-warning-banner {
+    text-align: center;
+    background: #4d3300;
+    border: 2px solid #FFD700;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-size: 13px;
+    color: #FFD700;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.cap-section-title {
+    color: #FF6B35;
+    font-size: 18px;
+    text-shadow: 1px 1px 0px #000;
+    margin: 16px 0 8px 0;
+    font-family: 'Papyrus', 'Comic Sans MS', cursive;
+    border-bottom: 2px solid #333366;
+    padding-bottom: 4px;
+}
+
+/* Overview table */
+.cap-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-family: 'Tahoma', 'Courier New', monospace;
+}
+
+.cap-table th {
+    background: #006994;
+    color: #FFD700;
+    padding: 6px 8px;
+    border: 1px solid #004466;
+    text-align: center;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.cap-table td {
+    padding: 6px 8px;
+    border: 1px solid #222244;
+    text-align: center;
+    color: #CCC;
+}
+
+.cap-table tr:nth-child(odd) { background: #000033; }
+.cap-table tr:nth-child(even) { background: #000022; }
+
+.cap-team-row { cursor: default; }
+
+.cap-owner {
+    font-weight: bold;
+    color: #00BFFF;
+    text-align: left !important;
+}
+
+.cap-green { color: #00FF00; font-weight: bold; }
+.cap-yellow { color: #FFD700; font-weight: bold; }
+.cap-red { color: #FF4444; font-weight: bold; }
+
+.cap-expand-btn {
+    background: #C0C0C0;
+    border: 2px outset #FFF;
+    padding: 2px 10px;
+    font-family: 'MS Sans Serif', 'Tahoma', sans-serif;
+    font-size: 11px;
+    cursor: pointer;
+    color: #000;
+}
+
+.cap-expand-btn:hover { background: #D4D0C8; }
+.cap-expand-btn:active { border-style: inset; }
+
+/* Pick inventory */
+.cap-picks-row td {
+    background: #000022 !important;
+    padding: 8px 12px;
+}
+
+.pick-inventory {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.pick-chip {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: 'Tahoma', monospace;
+    border: 1px solid #555;
+}
+
+.pick-chip-high { background: #4d0000; color: #FF6B35; border-color: #FF6B35; }
+.pick-chip-mid { background: #003300; color: #00FF00; border-color: #00AA00; }
+.pick-chip-low { background: #002244; color: #00BFFF; border-color: #006994; }
+
+/* Trade Simulator */
+.trade-simulator {
+    background: #000033;
+    border: 2px solid #333366;
+    padding: 14px;
+    margin: 10px 0;
+}
+
+.trade-teams-row {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.trade-team-col {
+    flex: 1;
+    min-width: 200px;
+}
+
+.trade-arrow {
+    font-size: 28px;
+    color: #FFD700;
+    padding-top: 28px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.trade-label {
+    display: block;
+    color: #FFD700;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.trade-select {
+    width: 100%;
+    padding: 4px;
+    font-family: 'Tahoma', 'Comic Sans MS', sans-serif;
+    font-size: 12px;
+    background: #FFF;
+    border: 2px inset #999;
+    margin-bottom: 8px;
+}
+
+.trade-pick-list {
+    min-height: 40px;
+    max-height: 200px;
+    overflow-y: auto;
+    background: #000022;
+    border: 2px inset #333;
+    padding: 4px;
+}
+
+.trade-pick-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 4px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #CCC;
+    border-bottom: 1px solid #111;
+}
+
+.trade-pick-item:hover {
+    background: #001a4d;
+}
+
+.trade-pick-item.selected {
+    background: #003300;
+    color: #00FF00;
+}
+
+.trade-pick-item input[type="checkbox"] {
+    accent-color: #FF6B35;
+}
+
+.trade-team-summary {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #888;
+    min-height: 20px;
+}
+
+.trade-validation {
+    margin: 10px 0;
+    padding: 6px 10px;
+    font-size: 12px;
+    text-align: center;
+    min-height: 20px;
+}
+
+.trade-validation.error {
+    color: #FF4444;
+    background: #330000;
+    border: 1px solid #FF4444;
+}
+
+.trade-validation.valid {
+    color: #00FF00;
+    background: #003300;
+    border: 1px solid #00FF00;
+}
+
+.trade-results {
+    margin: 10px 0;
+    padding: 10px;
+    background: #001122;
+    border: 2px solid #006994;
+}
+
+.trade-results-title {
+    color: #FFD700;
+    font-size: 14px;
+    margin: 0 0 8px 0;
+}
+
+.trade-results-line {
+    font-size: 13px;
+    color: #CCC;
+    margin: 4px 0;
+}
+
+.trade-buttons {
+    text-align: center;
+    margin: 12px 0 4px 0;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.trade-btn {
+    background: #C0C0C0;
+    border: 2px outset #FFF;
+    padding: 6px 18px;
+    font-family: 'MS Sans Serif', 'Tahoma', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.trade-btn:hover { background: #D4D0C8; }
+.trade-btn:active { border-style: inset; }
+
+.simulate-btn { background: #006994; color: #FFD700; border-color: #00BFFF; }
+.simulate-btn:hover { background: #007aad; }
+
+.execute-btn { background: #228B22; color: #FFD700; border-color: #90EE90; }
+.execute-btn:hover { background: #2E8B2E; }
+.execute-btn:disabled { background: #555; color: #888; border-color: #666; cursor: not-allowed; }
+
+.reset-btn { background: #8B0000; color: #FFD700; border-color: #FF6666; }
+.reset-btn:hover { background: #AA0000; }
+
+.undo-btn { background: #4d3300; color: #FFD700; border-color: #FFD700; }
+.undo-btn:hover { background: #664400; }
+
+.no-trades {
+    color: #666;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+}
+
+#trade-history-list {
+    background: #000022;
+    border: 2px inset #333;
+    padding: 8px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.trade-history-item {
+    padding: 6px 4px;
+    border-bottom: 1px solid #222;
+    font-size: 12px;
+    color: #CCC;
+}
+
+.trade-history-item:last-child { border-bottom: none; }
+
 /* Mobile — don't try too hard, it's a 90s site */
 @media (max-width: 600px) {
     .site-title { font-size: 24px; }
@@ -590,4 +881,6 @@ table {
     .rank-team-name { font-size: 15px; }
     .matchup-header { flex-direction: column; }
     .tab-btn { font-size: 11px; padding: 4px 10px; }
+    .trade-teams-row { flex-direction: column; }
+    .trade-arrow { padding-top: 0; font-size: 22px; }
 }

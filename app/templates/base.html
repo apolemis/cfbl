@@ -29,6 +29,7 @@
         <button class="tab-btn active" data-tab="rankings">&#9734; Power Rankings</button>
         <button class="tab-btn" data-tab="matchups">&#9876;&#65039; Matchups</button>
         <button class="tab-btn" data-tab="page3">&#128196; Page 3</button>
+        <button class="tab-btn" data-tab="salarycap">&#128176; Salary Cap</button>
         <button class="music-btn tab-btn">&#127925; Island Vibes &#127925;</button>
     </div>
 
@@ -366,6 +367,121 @@
         </div>
     </div>
 
+    <!-- ===== TAB 4: SALARY CAP ===== -->
+    <div id="tab-salarycap" class="tab-content">
+        {% if salary_cap %}
+        <h2 class="section-header">&#128176; 2027 KEEPER DRAFT &mdash; SALARY CAP TRACKER &#128176;</h2>
+        <p class="section-subheader">Cap Ceiling: ${{ salary_cap.cap_ceiling }} | Cap Floor: ${{ salary_cap.cap_floor }} | Trade away picks to raise cap, acquire picks to lower cap</p>
+
+        <div class="cap-warning-banner">
+            &#9888;&#65039; All trades must be approved on Yahoo Fantasy. This tool is for planning only. &#9888;&#65039;
+        </div>
+
+        <!-- Overview Table -->
+        <h3 class="cap-section-title">&#128202; Team Cap Overview</h3>
+        <table class="cap-table" id="cap-overview-table">
+            <thead>
+                <tr>
+                    <th>Owner</th>
+                    <th>Starting $</th>
+                    <th>Current $</th>
+                    <th># Picks</th>
+                    <th>Cap Room</th>
+                    <th>Picks</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for team in salary_cap.teams %}
+                <tr class="cap-team-row" data-team-id="{{ team.id }}">
+                    <td class="cap-owner">{{ team.owner }}</td>
+                    <td>${{ team.starting_salary }}</td>
+                    <td class="cap-current" id="cap-current-{{ team.id }}">&mdash;</td>
+                    <td class="cap-picks-count" id="cap-picks-count-{{ team.id }}">{{ team.picks|length }}</td>
+                    <td class="cap-room" id="cap-room-{{ team.id }}">&mdash;</td>
+                    <td>
+                        <button class="cap-expand-btn" onclick="togglePickInventory({{ team.id }})">&#128065; View</button>
+                    </td>
+                </tr>
+                <tr class="cap-picks-row" id="cap-picks-row-{{ team.id }}" style="display:none;">
+                    <td colspan="6">
+                        <div class="pick-inventory" id="pick-inventory-{{ team.id }}"></div>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <!-- Trade Simulator -->
+        <h3 class="cap-section-title">&#128257; Trade Simulator</h3>
+        <div class="trade-simulator">
+            <div class="trade-teams-row">
+                <div class="trade-team-col">
+                    <label class="trade-label">Team A</label>
+                    <select id="trade-team-a" class="trade-select" onchange="onTradeTeamSelect()">
+                        <option value="">-- Select --</option>
+                        {% for team in salary_cap.teams %}
+                        <option value="{{ team.id }}">{{ team.owner }}</option>
+                        {% endfor %}
+                    </select>
+                    <div class="trade-pick-list" id="trade-picks-a"></div>
+                    <div class="trade-team-summary" id="trade-summary-a"></div>
+                </div>
+                <div class="trade-arrow">&#8596;</div>
+                <div class="trade-team-col">
+                    <label class="trade-label">Team B</label>
+                    <select id="trade-team-b" class="trade-select" onchange="onTradeTeamSelect()">
+                        <option value="">-- Select --</option>
+                        {% for team in salary_cap.teams %}
+                        <option value="{{ team.id }}">{{ team.owner }}</option>
+                        {% endfor %}
+                    </select>
+                    <div class="trade-pick-list" id="trade-picks-b"></div>
+                    <div class="trade-team-summary" id="trade-summary-b"></div>
+                </div>
+            </div>
+
+            <div class="trade-validation" id="trade-validation"></div>
+
+            <div class="trade-results" id="trade-results" style="display:none;">
+                <h4 class="trade-results-title">&#128200; Pro Forma</h4>
+                <div id="trade-results-content"></div>
+            </div>
+
+            <div class="trade-buttons">
+                <button class="trade-btn simulate-btn" onclick="simulateTrade()">&#128270; Simulate</button>
+                <button class="trade-btn execute-btn" onclick="executeTrade()" id="execute-btn" disabled>&#9989; Execute Trade</button>
+                <button class="trade-btn reset-btn" onclick="resetTrade()">&#128260; Reset</button>
+            </div>
+        </div>
+
+        <!-- Trade History -->
+        <h3 class="cap-section-title">&#128220; Trade History</h3>
+        <div id="trade-history">
+            {% set ns = namespace(has_trades=false) %}
+            {% for team in salary_cap.teams %}
+                {% if team.trades|length > 0 %}
+                    {% set ns.has_trades = true %}
+                {% endif %}
+            {% endfor %}
+            {% if not ns.has_trades %}
+            <p class="no-trades">No trades have been executed yet. The island is quiet&hellip; for now.</p>
+            {% else %}
+            <div id="trade-history-list"></div>
+            {% endif %}
+        </div>
+
+        <div class="trade-buttons" style="margin-top: 10px;">
+            <button class="trade-btn undo-btn" onclick="undoLastTrade()">&#9664; Undo Last Trade</button>
+        </div>
+
+        {% else %}
+        <div class="coming-soon">
+            <h2 class="section-header">&#128176; SALARY CAP &#128176;</h2>
+            <p>Salary cap data loading... check back soon, mon.</p>
+        </div>
+        {% endif %}
+    </div>
+
     <!-- ===== FOOTER ===== -->
     <hr class="tropical-divider">
     <div class="site-footer">
@@ -387,6 +503,11 @@
     <source src="/static/audio/island.wav" type="audio/wav">
 </audio>
 
+{% if salary_cap %}
+<script>
+    var SALARY_CAP_DATA = {{ salary_cap|tojson }};
+</script>
+{% endif %}
 <script src="/static/js/cfbl.js"></script>
 
 </body>
