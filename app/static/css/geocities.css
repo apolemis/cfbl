@@ -361,9 +361,116 @@ body {
 }
 
 /* ================================
-   PAGE 3 — UNDER CONSTRUCTION
+   PAGE 3 — INTERVIEW SERIES
    ================================ */
 
+.page3-container {
+    padding: 8px 0;
+}
+
+.page3-masthead {
+    text-align: center;
+    padding: 16px 10px 8px 10px;
+    background: linear-gradient(180deg, #001a4d 0%, #000033 100%);
+    border: 2px solid #333366;
+}
+
+.page3-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #FFD700;
+    text-shadow: 2px 2px 0px #000;
+    margin: 0;
+    font-family: 'Papyrus', 'Comic Sans MS', cursive;
+    letter-spacing: 2px;
+}
+
+.page3-tagline {
+    font-size: 13px;
+    color: #00BFFF;
+    margin: 6px 0 0 0;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.page3-editors-note {
+    background: #000033;
+    border: 2px solid #333366;
+    padding: 12px 16px;
+    margin: 10px 0;
+}
+
+.editors-note-header {
+    color: #FF6B35;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px #000;
+    margin: 0 0 8px 0;
+    font-family: 'Papyrus', 'Comic Sans MS', cursive;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.page3-editors-note p {
+    color: #CCCCCC;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.page3-editors-note strong {
+    color: #FFD700;
+}
+
+.interview-body {
+    background: #000022;
+    border: 2px solid #333366;
+    padding: 14px 16px;
+    margin: 10px 0;
+}
+
+.interview-line {
+    color: #CCCCCC;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0 0 10px 0;
+}
+
+.interview-line:last-child {
+    margin-bottom: 0;
+}
+
+.speaker {
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'MS Sans Serif', 'Tahoma', 'Comic Sans MS', sans-serif;
+}
+
+.speaker-tony {
+    color: #FF6B35;
+}
+
+.speaker-dan {
+    color: #00BFFF;
+}
+
+.page3-footer-note {
+    background: #000033;
+    border: 2px solid #333366;
+    padding: 10px 16px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.page3-footer-note p {
+    color: #888;
+    font-size: 12px;
+    font-style: italic;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Keep old construction styles for potential future use */
 .construction-zone {
     text-align: center;
     padding: 40px 20px;
@@ -379,19 +486,6 @@ body {
 @keyframes blink-text {
     0%, 100% { opacity: 1; }
     50% { opacity: 0.3; }
-}
-
-.construction-subtitle {
-    font-size: 16px;
-    color: #FF7F7F;
-    margin: 16px 0;
-}
-
-.construction-message {
-    font-size: 14px;
-    color: #00BFFF;
-    margin: 20px 0;
-    font-style: italic;
 }
 
 .fake-form {
