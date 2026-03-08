@@ -1,0 +1,451 @@
+{
+  "rankings": [
+    {
+      "rank": 1,
+      "prev_rank": null,
+      "delta": "NEW",
+      "team_id": 8,
+      "team_name": "Universal Basic Civale",
+      "matchup_record": "11-0-0",
+      "cat_record": "113-40-23",
+      "win_pct": 1.0,
+      "strengths": [
+        "SV+H",
+        "HR",
+        "R"
+      ],
+      "weaknesses": [
+        "QS",
+        "SB",
+        "W"
+      ],
+      "team_totals": {
+        "era": 3.303,
+        "rbi": 915.2,
+        "whip": 1.143,
+        "sb": 98.7,
+        "hr": 298.4,
+        "avg": 0.264,
+        "kbb": 3.804,
+        "w": 51.2,
+        "r": 948.7,
+        "obp": 0.358,
+        "qs": 38.7,
+        "svh": 151.8,
+        "slg": 0.475,
+        "k": 927.2
+      },
+      "blurb": "The undisputed king of the CFBL sits atop his throne made of dingers and reliever ratios. Judge and Soto in the same lineup is genuinely unfair — that's a combined 90+ homers and an OBP that looks like a batting average from the steroid era. Harper, Freeman, and Riley just pile on. The pitching strategy is diabolical: only two real starters (Crochet and Webb) propped up by a fleet of elite relievers (Miller, Cade Smith, Abreu, Estrada) who keep the ERA at 3.30 and the SV+H flowing like rum punch at a beach bar. Wins and QS? Never heard of them. Don't need them. This team projected to beat EVERY SINGLE TEAM in the league in a head-to-head. 11-0 against the field. If you're playing against this squad, just set your lineup and look away. It'll be over soon."
+    },
+    {
+      "rank": 2,
+      "prev_rank": null,
+      "delta": "NEW",
+      "team_id": 7,
+      "team_name": "Young and Yandy Indiana Drift",
+      "matchup_record": "8-1-2",
+      "cat_record": "103-51-22",
+      "win_pct": 0.818,
+      "strengths": [
+        "SV+H",
+        "R",
+        "RBI"
+      ],
+      "weaknesses": [
+        "QS",
+        "W",
+        "K"
+      ],
+      "team_totals": {
+        "era": 3.7,
+        "rbi": 842.6,
+        "whip": 1.157,
+        "sb": 130.3,
+        "hr": 243.1,
+        "avg": 0.264,
+        "kbb": 3.82,
+        "w": 57.6,
+        "r": 893.4,
+        "obp": 0.339,
+        "qs": 55.7,
+        "svh": 91.9,
+        "slg": 0.446,
+        "k": 950.7
+      },
+      "blurb": "The most balanced roster in the league, which in fantasy baseball is code for \"doesn't have a glaring weakness anyone can exploit.\" Bobby Witt Jr., Lindor, and Ketel Marte form a middle infield that would make most real MLB teams jealous, and Wheeler-Gilbert is a genuinely elite 1-2 punch on the mound. The depth is absurd — Olson, Kwan, Happ, Nimmo, Vientos all sitting on the bench like it's a fantasy baseball buffet. The only knock is that this team doesn't dominate any single category the way the top team does. They're the straight-A student who never gets a 100. Still, 8-1-2 against the field is nothing to sneeze at. The manager just needs to, you know, actually set their lineup."
+    },
+    {
+      "rank": 3,
+      "prev_rank": null,
+      "delta": "NEW",
+      "team_id": 10,
+      "team_name": "Moo Moo Cowsers",
+      "matchup_record": "7-2-2",
+      "cat_record": "89-65-22",
+      "win_pct": 0.727,
+      "strengths": [
+        "SV+H",
+        "W",
+        "QS"
+      ],
+      "weaknesses": [
+        "SB",
+        "R",
+        "OBP"
+      ],
+      "team_totals": {
+        "era": 3.522,
+        "rbi": 731.9,
+        "whip": 1.156,
+        "sb": 101.4,
+        "hr": 235.4,
+        "avg": 0.254,
+        "kbb": 3.489,
+        "w": 70.0,
+        "r": 715.0,
+        "obp": 0.319,
+        "qs": 70.0,
+        "svh": 94.6,
+        "slg": 0.454,
+        "k": 1074.8
+      },
+      "blurb": "A sneaky-good roster that most people probably aren't paying attention to, kind of like the Cowsers name suggests. Altuve and Turner provide the veteran presence, Yamamoto-Valdez-Eovaldi is a rotation that actually generates Wins and QS (what a concept), and Hader-Devin Williams is a disgusting closer tandem. The offense isn't going to blow anyone away — there's no singular \"wow\" bat — but there are no easy outs either. Rooker is a sneaky HR contributor and Jac Caglianone is the kind of boom-or-bust prospect pick that either looks genius or gets dropped by Week 6. The Achilles heel? That OBP is rough. This team swings first and asks questions never."
+    },
+    {
+      "rank": 4,
+      "prev_rank": null,
+      "delta": "NEW",
+      "team_id": 3,
+      "team_name": "Kings of Castillo and Leon",
+      "matchup_record": "6-2-3",
+      "cat_record": "81-73-22",
+      "win_pct": 0.682,
+      "strengths": [
+        "QS",
+        "K/BB",
+        "SLG"
+      ],
+      "weaknesses": [
+        "SV+H",
+        "SB",
+        "K"
+      ],
+      "team_totals": {
+        "era": 3.797,
+        "rbi": 729.8,
+        "whip": 1.174,
+        "sb": 109.8,
+        "hr": 226.6,
+        "avg": 0.259,
+        "kbb": 3.573,
+        "w": 59.4,
+        "r": 732.3,
+        "obp": 0.339,
+        "qs": 72.0,
+        "svh": 0.5,
+        "slg": 0.459,
+        "k": 950.0
+      },
+      "blurb": "Kyle Tucker is the engine, Corey Seager is the co-pilot, and everyone else is just along for the ride hoping the plane doesn't crash. Jackson Holliday and Corbin Carroll provide upside but also the kind of volatility that keeps you refreshing the app at 2am. The pitching is... interesting. Gausman and Castillo are solid but unspectacular, and the rest of the staff is a collection of names you'd find on a Triple-A all-star roster. The SV+H situation is a catastrophe — 0.5 projected saves+holds for the entire season. That's not a strategy, that's a cry for help. If this team figures out the bullpen, they could move up. If they don't, well, enjoy that sweet QS total nobody else cares about."
+    },
+    {
+      "rank": 5,
+      "prev_rank": null,
+      "delta": "NEW",
+      "team_id": 1,
+      "team_name": "Nine Spoons One Brûlée",
+      "matchup_record": "5-3-3",
+      "cat_record": "84-70-22",
+      "win_pct": 0.591,
+      "strengths": [
+        "QS",
+        "K",
+        "W"
+      ],
+      "weaknesses": [
+        "SV+H",
+        "RBI",
+        "R"
+      ],
+      "team_totals": {
+        "era": 3.46,
+        "rbi": 639.1,
+        "whip": 1.141,
+        "sb": 119.3,
+        "hr": 199.2,
+        "avg": 0.256,
+        "kbb": 3.541,
+        "w": 66.7,
+        "r": 657.2,
+        "obp": 0.333,
+        "qs": 76.4,
+        "svh": 33.5,
+        "slg": 0.457,
+        "k": 1130.7
+      },
+      "blurb": "Paul Skenes and Ohtani (the pitching version) headline a rotation that generates Ks like a broken batting cage machine. 1,130 strikeouts projected — that's an absurd number. Cole Ragans and Ryan Pepiot quietly add depth. The problem? The offense looks like it was assembled from the clearance rack at a fantasy baseball yard sale. Gunnar Henderson is fantastic, but after that it's Jazz Chisholm (when he's not hurt), Brenton Doyle (who hits like he's swinging a pool noodle), and a bunch of question marks. 639 projected RBI is dead last. This is the fantasy equivalent of a team that wins 1-0 every night — exciting if you're a pitching nerd, depressing if you enjoy watching runs score."
+    },
+    {
+      "rank": 6,
+      "prev_rank": null,
+      "delta": "NEW",
+      "team_id": 11,
+      "team_name": "Señor Burns",
+      "matchup_record": "5-3-3",
+      "cat_record": "80-74-22",
+      "win_pct": 0.591,
+      "strengths": [
+        "SV+H",
+        "K/BB",
+        "W"
+      ],
+      "weaknesses": [
+        "SB",
+        "R",
+        "RBI"
+      ],
+      "team_totals": {
+        "era": 3.678,
+        "rbi": 672.9,
+        "whip": 1.125,
+        "sb": 85.4,
+        "hr": 209.6,
+        "avg": 0.255,
+        "kbb": 4.201,
+        "w": 68.4,
+        "r": 674.7,
+        "obp": 0.337,
+        "qs": 67.6,
+        "svh": 82.7,
+        "slg": 0.448,
+        "k": 1063.1
+      },
+      "blurb": "Chris Sale, Bryan Woo, George Kirby, Aaron Nola, Shota Imanaga — this is the kind of rotation that wins you Wins, QS, and K while you sit back and sip your cafecito. The K/BB ratio (4.2) is the best in the league by a mile. The hitting is anchored by Vlad Jr. and Arraez, two of the best pure hitters in baseball, but this team is allergic to stolen bases (85 projected — worst in the league). That 674 R total isn't great either. This roster screams \"I dominated my league in 2018\" with its old-school reliance on pitching and contact hitting. In a league that rewards SB and SLG, this approach is fighting with one hand tied behind its back. Still, when Sale and Kirby are dealing, nobody wants this smoke."
+    },
+    {
+      "rank": 7,
+      "prev_rank": null,
+      "delta": "NEW",
+      "team_id": 6,
+      "team_name": "Implicitly Explicit",
+      "matchup_record": "4-5-2",
+      "cat_record": "76-78-22",
+      "win_pct": 0.455,
+      "strengths": [
+        "K",
+        "QS",
+        "W"
+      ],
+      "weaknesses": [
+        "SB",
+        "SLG",
+        "OBP"
+      ],
+      "team_totals": {
+        "era": 3.739,
+        "rbi": 739.7,
+        "whip": 1.178,
+        "sb": 89.3,
+        "hr": 218.0,
+        "avg": 0.251,
+        "kbb": 3.481,
+        "w": 71.5,
+        "r": 723.4,
+        "obp": 0.32,
+        "qs": 76.5,
+        "svh": 66.5,
+        "slg": 0.43,
+        "k": 1270.7
+      },
+      "blurb": "This team has more talent on the bench than some teams have in their starting lineup. Devers, Riley Greene, Manny Machado, Spencer Strider, Bryce Miller, Roki Sasaki — all just... sitting there. On the bench. ALL of them. The lineup isn't set. It's Week 1, my brother. This is like showing up to a potluck and leaving your dish in the car. The raw talent here is probably top-4 in the league when optimally deployed, but the \"when\" is doing heavy lifting. The prospect stash (Bazzana, Basallo, Eldridge, Crews) is the best in the CFBL and suggests this manager is playing the long game. Unfortunately, the long game doesn't win you matchups in March. Set. Your. Lineup."
+    },
+    {
+      "rank": 8,
+      "prev_rank": null,
+      "delta": "NEW",
+      "team_id": 5,
+      "team_name": "CLAUDE 4 COMMISH",
+      "matchup_record": "2-4-5",
+      "cat_record": "73-80-23",
+      "win_pct": 0.409,
+      "strengths": [
+        "SB",
+        "R",
+        "HR"
+      ],
+      "weaknesses": [
+        "SV+H",
+        "W",
+        "K"
+      ],
+      "team_totals": {
+        "era": 3.851,
+        "rbi": 713.0,
+        "whip": 1.215,
+        "sb": 170.5,
+        "hr": 238.4,
+        "avg": 0.26,
+        "kbb": 3.071,
+        "w": 51.2,
+        "r": 809.1,
+        "obp": 0.346,
+        "qs": 59.4,
+        "svh": 1.1,
+        "slg": 0.463,
+        "k": 854.5
+      },
+      "blurb": "On paper, this should be the best team in the league. Ohtani (batter), Acuna, Tatis, Elly De La Cruz — that's 170 combined stolen bases and a highlight reel that would break Twitter. Gerrit Cole adds ace-level pitching. So why is this team ranked 8th? Because the rest of the roster is held together with duct tape and prayers. The SV+H total of 1.1 is not a typo — this team has essentially ZERO relievers. The K/BB ratio (3.07) is ugly. Glasnow and Snell are boom-or-bust arms that could easily bust. This team is the sports car with no brakes — thrilling to watch, terrifying to rely on. The stolen base title is theirs for the taking, but you can't steal your way out of a 3.85 ERA."
+    },
+    {
+      "rank": 9,
+      "prev_rank": null,
+      "delta": "NEW",
+      "team_id": 4,
+      "team_name": "PO' BOYD SANDWICH",
+      "matchup_record": "2-7-2",
+      "cat_record": "69-85-22",
+      "win_pct": 0.273,
+      "strengths": [
+        "W",
+        "QS",
+        "K"
+      ],
+      "weaknesses": [
+        "HR",
+        "R",
+        "RBI"
+      ],
+      "team_totals": {
+        "era": 3.743,
+        "rbi": 653.3,
+        "whip": 1.198,
+        "sb": 132.2,
+        "hr": 193.6,
+        "avg": 0.255,
+        "kbb": 3.127,
+        "w": 76.2,
+        "r": 667.1,
+        "obp": 0.328,
+        "qs": 75.8,
+        "svh": 63.9,
+        "slg": 0.439,
+        "k": 1116.6
+      },
+      "blurb": "Yordan Alvarez and Kyle Schwarber provide the power, CJ Abrams provides the speed, and the bench provides... more pitchers than a Little League tournament. Seriously, there are 15 pitchers on this roster, including Max Fried, Kyle Bradish, Michael King, Carlos Rodon, and Freddy Peralta — ALL ON THE BENCH. None of them in active pitching slots. The only active pitchers are two relievers (Chapman and Iglesias). This is either a 4D chess move that hasn't been deployed yet, or someone forgot that starting pitchers need to be, you know, started. The raw SP depth is elite if properly activated, but right now this team is bringing a knife to a gunfight and leaving the gun at home."
+    },
+    {
+      "rank": 10,
+      "prev_rank": null,
+      "delta": "NEW",
+      "team_id": 9,
+      "team_name": "Duran Duran",
+      "matchup_record": "2-7-2",
+      "cat_record": "62-92-22",
+      "win_pct": 0.273,
+      "strengths": [
+        "SV+H",
+        "SB",
+        "RBI"
+      ],
+      "weaknesses": [
+        "QS",
+        "W",
+        "K"
+      ],
+      "team_totals": {
+        "era": 3.828,
+        "rbi": 785.7,
+        "whip": 1.235,
+        "sb": 175.2,
+        "hr": 218.8,
+        "avg": 0.26,
+        "kbb": 2.821,
+        "w": 44.4,
+        "r": 796.7,
+        "obp": 0.329,
+        "qs": 26.5,
+        "svh": 167.8,
+        "slg": 0.439,
+        "k": 728.8
+      },
+      "blurb": "Jose Ramirez, Mookie Betts, and Jarren Duran — that's a legitimate core that generates R, HR, RBI, and SB. But after the top three, this roster falls off a cliff faster than Duran Duran's career after \"Rio.\" The pitching is a war crime. Gavin Williams, Trevor Rogers, and Cade Horton as your SP1-SP2-SP3? That's a combined ERA that'll make your eyes water. The saving grace is a loaded bullpen (Edwin Diaz, Jhoan Duran, Kenley Jansen, Carlos Estevez) that racks up SV+H like nobody's business (167.8 — second in the league). But the 26.5 QS projection is historically bad. This team is a relief pitcher with a dream and a prayer."
+    },
+    {
+      "rank": 11,
+      "prev_rank": null,
+      "delta": "NEW",
+      "team_id": 2,
+      "team_name": "Boydz n the Hood",
+      "matchup_record": "1-8-2",
+      "cat_record": "51-103-22",
+      "win_pct": 0.182,
+      "strengths": [
+        "K/BB",
+        "ERA",
+        "QS"
+      ],
+      "weaknesses": [
+        "SV+H",
+        "SB",
+        "R"
+      ],
+      "team_totals": {
+        "era": 3.621,
+        "rbi": 695.5,
+        "whip": 1.16,
+        "sb": 94.8,
+        "hr": 214.7,
+        "avg": 0.249,
+        "kbb": 3.657,
+        "w": 54.5,
+        "r": 649.5,
+        "obp": 0.321,
+        "qs": 63.7,
+        "svh": 1.5,
+        "slg": 0.444,
+        "k": 905.1
+      },
+      "blurb": "Tarik Skubal is a legitimate ace. That's the nice part. The rest of this roster reads like a keeper league that's been tanking for three years. Corbin Burnes is on the IL, Jared Jones is on the IL, and the remaining \"depth\" is Jack Flaherty, Edward Cabrera, and a prayer candle. The offense is carried by Julio Rodriguez and Oneil Cruz — two electric talents surrounded by Spencer Torkelson (yikes), Kazuma Okamoto (bold), and Drake Baldwin catching. The prospect stash (Max Clark, Sebastian Walcott, JJ Wetherholt) says \"trust the process,\" but the 1-8-2 record against the field says \"the process isn't working yet.\" This is a rebuild. Embrace it."
+    },
+    {
+      "rank": 12,
+      "prev_rank": null,
+      "delta": "NEW",
+      "team_id": 12,
+      "team_name": "ShawSwank Redemption",
+      "matchup_record": "0-11-0",
+      "cat_record": "42-112-22",
+      "win_pct": 0.0,
+      "strengths": [
+        "SB",
+        "W",
+        "QS"
+      ],
+      "weaknesses": [
+        "HR",
+        "K/BB",
+        "RBI"
+      ],
+      "team_totals": {
+        "era": 3.942,
+        "rbi": 648.9,
+        "whip": 1.229,
+        "sb": 162.4,
+        "hr": 175.8,
+        "avg": 0.247,
+        "kbb": 2.966,
+        "w": 68.6,
+        "r": 707.7,
+        "obp": 0.318,
+        "qs": 69.6,
+        "svh": 61.9,
+        "slg": 0.408,
+        "k": 1084.1
+      },
+      "blurb": "0-11. Zero. Wins. Against. The. Field. This roster is the fantasy equivalent of showing up to a sword fight with a pool noodle. The marquee \"aces\" are Brandon Woodruff (hasn't thrown a meaningful pitch since 2023), Robbie Ray (same), and Sandy Alcantara (please refer to previous parenthetical). The offense features Lawrence Butler and Matt Shaw as the headliners, which is the kind of thing you say when you don't have headliners. The stolen base total (162) is actually impressive, but it's like being the fastest runner on a sinking ship. The team name promises redemption, but the projections promise pain. At least Kyle Teel and Jordan Lawlar give you something to dream about for 2027."
+    }
+  ],
+  "week": 1,
+  "week_label": "Week 1 (Mar 25 - Mar 29)",
+  "generated_at": "2026-03-08T16:29:51.890697+00:00"
+}

@@ -1,0 +1,589 @@
+{
+  "matchups": [
+    {
+      "team_a": {
+        "id": 8,
+        "name": "Universal Basic Civale"
+      },
+      "team_b": {
+        "id": 9,
+        "name": "Duran Duran"
+      },
+      "predicted_score": "12-2-2",
+      "favorite": "team_a",
+      "moneyline_a": "-500",
+      "moneyline_b": "+400",
+      "cat_breakdown": {
+        "ERA": {
+          "a": 3.303,
+          "b": 3.828,
+          "edge": "a"
+        },
+        "RBI": {
+          "a": 915.2,
+          "b": 785.7,
+          "edge": "a"
+        },
+        "WHIP": {
+          "a": 1.143,
+          "b": 1.235,
+          "edge": "a"
+        },
+        "SB": {
+          "a": 98.7,
+          "b": 175.2,
+          "edge": "b"
+        },
+        "HR": {
+          "a": 298.4,
+          "b": 218.8,
+          "edge": "a"
+        },
+        "AVG": {
+          "a": 0.264,
+          "b": 0.26,
+          "edge": "a"
+        },
+        "K/BB": {
+          "a": 3.804,
+          "b": 2.821,
+          "edge": "a"
+        },
+        "W": {
+          "a": 51.2,
+          "b": 44.4,
+          "edge": "a"
+        },
+        "R": {
+          "a": 948.7,
+          "b": 796.7,
+          "edge": "a"
+        },
+        "OBP": {
+          "a": 0.358,
+          "b": 0.329,
+          "edge": "a"
+        },
+        "QS": {
+          "a": 38.7,
+          "b": 26.5,
+          "edge": "a"
+        },
+        "SV+H": {
+          "a": 151.8,
+          "b": 167.8,
+          "edge": "b"
+        },
+        "SLG": {
+          "a": 0.475,
+          "b": 0.439,
+          "edge": "a"
+        },
+        "K": {
+          "a": 927.2,
+          "b": 728.8,
+          "edge": "a"
+        },
+        "CYC": {
+          "a": 0,
+          "b": 0,
+          "edge": "tie"
+        },
+        "NH": {
+          "a": 0,
+          "b": 0,
+          "edge": "tie"
+        }
+      },
+      "blurb": "Tony's juggernaut opens the season against Duran Duran, and this matchup has \"mercy rule\" written all over it. Universal Basic Civale projects to win 12 of 14 active categories — losing only SB (Duran's one trick) and SV+H (Duran's loaded bullpen). Judge and Soto alone will out-homer Duran Duran's entire lineup. The ERA gap (3.30 vs 3.83) is a full half-run, and the OBP gap (.358 vs .329) is a canyon. If you're Gio, the best strategy might be to just not look at the scoreboard until next Monday."
+    },
+    {
+      "team_a": {
+        "id": 1,
+        "name": "Nine Spoons One Brûlée"
+      },
+      "team_b": {
+        "id": 7,
+        "name": "Young and Yandy Indiana Drift"
+      },
+      "predicted_score": "6-8-2",
+      "favorite": "team_b",
+      "moneyline_a": "+120",
+      "moneyline_b": "-140",
+      "cat_breakdown": {
+        "ERA": {
+          "a": 3.46,
+          "b": 3.7,
+          "edge": "a"
+        },
+        "RBI": {
+          "a": 639.1,
+          "b": 842.6,
+          "edge": "b"
+        },
+        "WHIP": {
+          "a": 1.141,
+          "b": 1.157,
+          "edge": "a"
+        },
+        "SB": {
+          "a": 119.3,
+          "b": 130.3,
+          "edge": "b"
+        },
+        "HR": {
+          "a": 199.2,
+          "b": 243.1,
+          "edge": "b"
+        },
+        "AVG": {
+          "a": 0.256,
+          "b": 0.264,
+          "edge": "b"
+        },
+        "K/BB": {
+          "a": 3.541,
+          "b": 3.82,
+          "edge": "b"
+        },
+        "W": {
+          "a": 66.7,
+          "b": 57.6,
+          "edge": "a"
+        },
+        "R": {
+          "a": 657.2,
+          "b": 893.4,
+          "edge": "b"
+        },
+        "OBP": {
+          "a": 0.333,
+          "b": 0.339,
+          "edge": "b"
+        },
+        "QS": {
+          "a": 76.4,
+          "b": 55.7,
+          "edge": "a"
+        },
+        "SV+H": {
+          "a": 33.5,
+          "b": 91.9,
+          "edge": "b"
+        },
+        "SLG": {
+          "a": 0.457,
+          "b": 0.446,
+          "edge": "a"
+        },
+        "K": {
+          "a": 1130.7,
+          "b": 950.7,
+          "edge": "a"
+        },
+        "CYC": {
+          "a": 0,
+          "b": 0,
+          "edge": "tie"
+        },
+        "NH": {
+          "a": 0,
+          "b": 0,
+          "edge": "tie"
+        }
+      },
+      "blurb": "A fascinating clash of styles: Nine Spoons brings the pitching firepower (Skenes, Ohtani-P, 1,130 K) while Young and Yandy counters with the most balanced offense in the league. The Drift's hitting advantage is massive — 842 RBI vs 639, 243 HR vs 199, 893 R vs 657. Nine Spoons takes the pitching cats (ERA, WHIP, QS, K) but loses basically every hitting category. When your offense is getting outscored by 200+ runs, no amount of K's will save you. Young and Yandy should cruise, but they need to actually set their lineup first. Details, details."
+    },
+    {
+      "team_a": {
+        "id": 2,
+        "name": "Boydz n the Hood"
+      },
+      "team_b": {
+        "id": 11,
+        "name": "Señor Burns"
+      },
+      "predicted_score": "4-10-2",
+      "favorite": "team_b",
+      "moneyline_a": "+250",
+      "moneyline_b": "-300",
+      "cat_breakdown": {
+        "ERA": {
+          "a": 3.621,
+          "b": 3.678,
+          "edge": "a"
+        },
+        "RBI": {
+          "a": 695.5,
+          "b": 672.9,
+          "edge": "a"
+        },
+        "WHIP": {
+          "a": 1.16,
+          "b": 1.125,
+          "edge": "b"
+        },
+        "SB": {
+          "a": 94.8,
+          "b": 85.4,
+          "edge": "a"
+        },
+        "HR": {
+          "a": 214.7,
+          "b": 209.6,
+          "edge": "a"
+        },
+        "AVG": {
+          "a": 0.249,
+          "b": 0.255,
+          "edge": "b"
+        },
+        "K/BB": {
+          "a": 3.657,
+          "b": 4.201,
+          "edge": "b"
+        },
+        "W": {
+          "a": 54.5,
+          "b": 68.4,
+          "edge": "b"
+        },
+        "R": {
+          "a": 649.5,
+          "b": 674.7,
+          "edge": "b"
+        },
+        "OBP": {
+          "a": 0.321,
+          "b": 0.337,
+          "edge": "b"
+        },
+        "QS": {
+          "a": 63.7,
+          "b": 67.6,
+          "edge": "b"
+        },
+        "SV+H": {
+          "a": 1.5,
+          "b": 82.7,
+          "edge": "b"
+        },
+        "SLG": {
+          "a": 0.444,
+          "b": 0.448,
+          "edge": "b"
+        },
+        "K": {
+          "a": 905.1,
+          "b": 1063.1,
+          "edge": "b"
+        },
+        "CYC": {
+          "a": 0,
+          "b": 0,
+          "edge": "tie"
+        },
+        "NH": {
+          "a": 0,
+          "b": 0,
+          "edge": "tie"
+        }
+      },
+      "blurb": "The battle of the bottom half, and it's not pretty. Boydz brings a Skubal-led rotation that wins ERA but loses basically everything else. Señor Burns has the superior pitching staff (Sale, Woo, Kirby, Nola) and it shows — they take W, K, WHIP, K/BB, QS, and SV+H. Boydz manages to eke out ERA, RBI, SB, and HR, but it's not enough. The 4-10 projected score is ugly. Boydz n the Hood is bringing a starter to a full-roster fight. With Burnes on the IL, this team is just waiting for reinforcements that may come too late."
+    },
+    {
+      "team_a": {
+        "id": 3,
+        "name": "Kings of Castillo and Leon"
+      },
+      "team_b": {
+        "id": 6,
+        "name": "Implicitly Explicit"
+      },
+      "predicted_score": "8-6-2",
+      "favorite": "team_a",
+      "moneyline_a": "-140",
+      "moneyline_b": "+120",
+      "cat_breakdown": {
+        "ERA": {
+          "a": 3.797,
+          "b": 3.739,
+          "edge": "b"
+        },
+        "RBI": {
+          "a": 729.8,
+          "b": 739.7,
+          "edge": "b"
+        },
+        "WHIP": {
+          "a": 1.174,
+          "b": 1.178,
+          "edge": "a"
+        },
+        "SB": {
+          "a": 109.8,
+          "b": 89.3,
+          "edge": "a"
+        },
+        "HR": {
+          "a": 226.6,
+          "b": 218.0,
+          "edge": "a"
+        },
+        "AVG": {
+          "a": 0.259,
+          "b": 0.251,
+          "edge": "a"
+        },
+        "K/BB": {
+          "a": 3.573,
+          "b": 3.481,
+          "edge": "a"
+        },
+        "W": {
+          "a": 59.4,
+          "b": 71.5,
+          "edge": "b"
+        },
+        "R": {
+          "a": 732.3,
+          "b": 723.4,
+          "edge": "a"
+        },
+        "OBP": {
+          "a": 0.339,
+          "b": 0.32,
+          "edge": "a"
+        },
+        "QS": {
+          "a": 72.0,
+          "b": 76.5,
+          "edge": "b"
+        },
+        "SV+H": {
+          "a": 0.5,
+          "b": 66.5,
+          "edge": "b"
+        },
+        "SLG": {
+          "a": 0.459,
+          "b": 0.43,
+          "edge": "a"
+        },
+        "K": {
+          "a": 950.0,
+          "b": 1270.7,
+          "edge": "b"
+        },
+        "CYC": {
+          "a": 0,
+          "b": 0,
+          "edge": "tie"
+        },
+        "NH": {
+          "a": 0,
+          "b": 0,
+          "edge": "tie"
+        }
+      },
+      "blurb": "The closest matchup of the week, projected at 8-6. Kings have Tucker and Seager driving the offense, winning SB, HR, AVG, OBP, SLG, and R — basically every hitting category that matters. Implicitly Explicit counters with raw pitching volume (1,270 K from Strider, Greene, Miller, Cease and company) and wins ERA, W, QS, K, and SV+H. But here's the thing — Implicitly Explicit still hasn't set their lineup. If they actually slot their players in, this could flip. If they don't, well, you can't win categories with benched players. Kings should take this, but it's not a lock."
+    },
+    {
+      "team_a": {
+        "id": 4,
+        "name": "PO' BOYD SANDWICH"
+      },
+      "team_b": {
+        "id": 5,
+        "name": "CLAUDE 4 COMMISH"
+      },
+      "predicted_score": "7-7-2",
+      "favorite": "even",
+      "moneyline_a": "-110",
+      "moneyline_b": "-110",
+      "cat_breakdown": {
+        "ERA": {
+          "a": 3.743,
+          "b": 3.851,
+          "edge": "a"
+        },
+        "RBI": {
+          "a": 653.3,
+          "b": 713.0,
+          "edge": "b"
+        },
+        "WHIP": {
+          "a": 1.198,
+          "b": 1.215,
+          "edge": "a"
+        },
+        "SB": {
+          "a": 132.2,
+          "b": 170.5,
+          "edge": "b"
+        },
+        "HR": {
+          "a": 193.6,
+          "b": 238.4,
+          "edge": "b"
+        },
+        "AVG": {
+          "a": 0.255,
+          "b": 0.26,
+          "edge": "b"
+        },
+        "K/BB": {
+          "a": 3.127,
+          "b": 3.071,
+          "edge": "a"
+        },
+        "W": {
+          "a": 76.2,
+          "b": 51.2,
+          "edge": "a"
+        },
+        "R": {
+          "a": 667.1,
+          "b": 809.1,
+          "edge": "b"
+        },
+        "OBP": {
+          "a": 0.328,
+          "b": 0.346,
+          "edge": "b"
+        },
+        "QS": {
+          "a": 75.8,
+          "b": 59.4,
+          "edge": "a"
+        },
+        "SV+H": {
+          "a": 63.9,
+          "b": 1.1,
+          "edge": "a"
+        },
+        "SLG": {
+          "a": 0.439,
+          "b": 0.463,
+          "edge": "b"
+        },
+        "K": {
+          "a": 1116.6,
+          "b": 854.5,
+          "edge": "a"
+        },
+        "CYC": {
+          "a": 0,
+          "b": 0,
+          "edge": "tie"
+        },
+        "NH": {
+          "a": 0,
+          "b": 0,
+          "edge": "tie"
+        }
+      },
+      "blurb": "The true pick'em of Week 1 — dead even at 7-7. PO' BOYD brings the pitching depth (76 W, 1,116 K, 75 QS) while CLAUDE 4 COMMISH brings the offensive fireworks (Ohtani, Acuna, Tatis, Elly = 170 SB and 238 HR). It's the classic \"pitching vs hitting\" battle that makes H2H fantasy so fun. CLAUDE takes R, HR, RBI, SB, AVG, OBP, SLG — basically the entire hitting side. PO' BOYD takes ERA, WHIP, W, QS, K, K/BB, SV+H — basically the entire pitching side. Whoever wins this matchup is the team that steals one extra category. This is going to be a war."
+    },
+    {
+      "team_a": {
+        "id": 10,
+        "name": "Moo Moo Cowsers"
+      },
+      "team_b": {
+        "id": 12,
+        "name": "ShawSwank Redemption"
+      },
+      "predicted_score": "12-2-2",
+      "favorite": "team_a",
+      "moneyline_a": "-500",
+      "moneyline_b": "+400",
+      "cat_breakdown": {
+        "ERA": {
+          "a": 3.522,
+          "b": 3.942,
+          "edge": "a"
+        },
+        "RBI": {
+          "a": 731.9,
+          "b": 648.9,
+          "edge": "a"
+        },
+        "WHIP": {
+          "a": 1.156,
+          "b": 1.229,
+          "edge": "a"
+        },
+        "SB": {
+          "a": 101.4,
+          "b": 162.4,
+          "edge": "b"
+        },
+        "HR": {
+          "a": 235.4,
+          "b": 175.8,
+          "edge": "a"
+        },
+        "AVG": {
+          "a": 0.254,
+          "b": 0.247,
+          "edge": "a"
+        },
+        "K/BB": {
+          "a": 3.489,
+          "b": 2.966,
+          "edge": "a"
+        },
+        "W": {
+          "a": 70.0,
+          "b": 68.6,
+          "edge": "a"
+        },
+        "R": {
+          "a": 715.0,
+          "b": 707.7,
+          "edge": "a"
+        },
+        "OBP": {
+          "a": 0.319,
+          "b": 0.318,
+          "edge": "a"
+        },
+        "QS": {
+          "a": 70.0,
+          "b": 69.6,
+          "edge": "a"
+        },
+        "SV+H": {
+          "a": 94.6,
+          "b": 61.9,
+          "edge": "a"
+        },
+        "SLG": {
+          "a": 0.454,
+          "b": 0.408,
+          "edge": "a"
+        },
+        "K": {
+          "a": 1074.8,
+          "b": 1084.1,
+          "edge": "b"
+        },
+        "CYC": {
+          "a": 0,
+          "b": 0,
+          "edge": "tie"
+        },
+        "NH": {
+          "a": 0,
+          "b": 0,
+          "edge": "tie"
+        }
+      },
+      "blurb": "This is what happens when the #3 team draws the #12 team in Week 1: a projected 12-2 beatdown. Moo Moo Cowsers wins literally every category except SB and K (barely). ShawSwank's roster of comeback pitchers (Woodruff, Ray, Alcantara) and replacement-level hitters simply cannot compete with Altuve, Turner, Yamamoto, and Hader. This is the matchup equivalent of a preseason game — it's technically competitive, but everyone knows how it ends. ShawSwank's only hope is that Woodruff suddenly looks like 2023 Woodruff. Spoiler: the projections do not think that will happen."
+    }
+  ],
+  "week": 1,
+  "week_label": "Week 1 (Mar 25 - Mar 29)",
+  "lock_of_the_week": "Universal Basic Civale (-500) over Duran Duran"
+}

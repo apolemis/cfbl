@@ -1,0 +1,499 @@
+/* ============================================
+   xpage.com/cfbl — GeoCities Caribbean Edition
+   Best viewed in Netscape Navigator 4.0
+   ============================================ */
+
+/* Tiled tropical background */
+body {
+    background-color: #006666;
+    background-image:
+        linear-gradient(45deg, rgba(0,0,0,0.05) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(0,0,0,0.05) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, rgba(0,0,0,0.05) 75%),
+        linear-gradient(-45deg, transparent 75%, rgba(0,0,0,0.05) 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    font-family: 'Comic Sans MS', 'Papyrus', 'Chalkboard SE', cursive, sans-serif;
+    color: #FFFF00;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Main page wrapper — the "table" */
+.page-wrapper {
+    max-width: 860px;
+    margin: 0 auto;
+    background: #000040;
+    border: 4px ridge #C0C0C0;
+    padding: 12px 16px;
+    box-shadow: 4px 4px 0px #000;
+}
+
+/* Header */
+.site-header {
+    text-align: center;
+    padding: 8px 0;
+}
+
+.site-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #FF6B35;
+    text-shadow: 3px 3px 0px #000, -1px -1px 0px #FFD700;
+    margin: 0;
+    letter-spacing: 2px;
+    font-family: 'Papyrus', 'Comic Sans MS', cursive;
+}
+
+.site-subtitle {
+    font-size: 14px;
+    color: #00BFFF;
+    margin: 4px 0 0 0;
+    letter-spacing: 1px;
+}
+
+.palm-left, .palm-right {
+    font-size: 32px;
+    vertical-align: middle;
+}
+
+/* Marquee */
+.marquee-bar {
+    background: #000033;
+    border: 2px inset #333;
+    padding: 4px 0;
+    margin: 8px 0;
+    font-size: 13px;
+    color: #FFD700;
+}
+
+/* Tropical divider */
+.tropical-divider {
+    border: none;
+    height: 4px;
+    background: linear-gradient(90deg, #FF6B35, #FFD700, #228B22, #006994, #FF7F7F, #FF6B35);
+    margin: 10px 0;
+}
+
+/* Tab bar — Windows 95 buttons */
+.tab-bar {
+    text-align: center;
+    margin: 10px 0;
+    padding: 4px;
+    background: #C0C0C0;
+    border: 2px outset #FFF;
+}
+
+.tab-btn {
+    background: #C0C0C0;
+    border: 2px outset #FFFFFF;
+    padding: 5px 16px;
+    font-family: 'MS Sans Serif', 'Tahoma', 'Comic Sans MS', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    margin: 2px 1px;
+    text-transform: uppercase;
+}
+
+.tab-btn:hover {
+    background: #D4D0C8;
+}
+
+.tab-btn:active, .tab-btn.active {
+    border-style: inset;
+    background: #A0A0A0;
+    color: #000080;
+}
+
+.music-btn {
+    background: #228B22;
+    color: #FFD700;
+    border: 2px outset #90EE90;
+}
+
+.music-btn:hover {
+    background: #2E8B2E;
+}
+
+.music-btn.playing {
+    animation: pulse-music 1.5s ease-in-out infinite;
+    background: #FF6B35;
+    border-color: #FFD700;
+}
+
+@keyframes pulse-music {
+    0%, 100% { box-shadow: 0 0 4px #FF6B35; }
+    50% { box-shadow: 0 0 12px #FFD700; }
+}
+
+/* Tab content */
+.tab-content {
+    display: none;
+    padding: 8px 0;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Section headers */
+.section-header {
+    text-align: center;
+    color: #FFD700;
+    font-size: 24px;
+    text-shadow: 2px 2px 0px #000;
+    margin: 12px 0 4px 0;
+    font-family: 'Papyrus', 'Comic Sans MS', cursive;
+}
+
+.section-subheader {
+    text-align: center;
+    color: #888;
+    font-size: 11px;
+    margin: 0 0 12px 0;
+}
+
+/* ================================
+   POWER RANKINGS
+   ================================ */
+
+.ranking-card {
+    background: #000033;
+    border: 2px solid #333366;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.ranking-header {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    background: linear-gradient(180deg, #001a4d 0%, #000033 100%);
+    border-bottom: 1px solid #333366;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.rank-number {
+    font-size: 36px;
+    font-weight: bold;
+    color: #FFD700;
+    text-shadow: 2px 2px 0px #000;
+    min-width: 50px;
+    text-align: center;
+    font-family: 'Georgia', serif;
+}
+
+.rank-delta {
+    font-size: 14px;
+    min-width: 40px;
+    text-align: center;
+}
+
+.delta-up { color: #00FF00; }
+.delta-down { color: #FF4444; }
+.delta-new { color: #FFD700; font-style: italic; font-size: 12px; }
+.delta-same { color: #888; }
+
+.rank-team-info {
+    flex: 1;
+    min-width: 200px;
+}
+
+.rank-team-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00BFFF;
+    text-shadow: 1px 1px 0px #000;
+}
+
+.rank-record {
+    font-size: 12px;
+    color: #AAAAAA;
+    margin-top: 2px;
+}
+
+.rank-badges {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: 'Tahoma', sans-serif;
+}
+
+.badge-strength { background: #004d00; color: #00FF00; border: 1px solid #00AA00; }
+.badge-weakness { background: #4d0000; color: #FF6666; border: 1px solid #AA0000; }
+
+.rank-blurb {
+    padding: 10px 14px;
+    color: #CCCCCC;
+    font-size: 13px;
+    line-height: 1.5;
+    border-top: 1px dashed #333366;
+}
+
+/* ================================
+   MATCHUPS
+   ================================ */
+
+.matchup-card {
+    background: #000033;
+    border: 2px solid #333366;
+    margin: 14px 0;
+    padding: 0;
+}
+
+.matchup-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: linear-gradient(180deg, #001a4d 0%, #000033 100%);
+    border-bottom: 1px solid #333366;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.matchup-team {
+    text-align: center;
+    flex: 1;
+    min-width: 150px;
+}
+
+.matchup-team-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #00BFFF;
+    text-shadow: 1px 1px 0px #000;
+}
+
+.matchup-moneyline {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    margin-top: 4px;
+}
+
+.ml-favorite { color: #FF6B35; }
+.ml-underdog { color: #90EE90; }
+
+.matchup-vs {
+    font-size: 20px;
+    color: #FF6B35;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px #000;
+    padding: 0 8px;
+}
+
+.matchup-prediction {
+    text-align: center;
+    padding: 6px;
+    font-size: 13px;
+    color: #FFD700;
+    background: #001122;
+}
+
+.matchup-predicted-score {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Category breakdown table */
+.cat-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+    font-family: 'Tahoma', 'Courier New', monospace;
+}
+
+.cat-table th {
+    background: #006994;
+    color: #FFD700;
+    padding: 3px 5px;
+    border: 1px solid #004466;
+    text-align: center;
+    font-size: 10px;
+}
+
+.cat-table td {
+    padding: 3px 5px;
+    border: 1px solid #222244;
+    text-align: center;
+    color: #CCC;
+}
+
+.cat-table tr:nth-child(odd) { background: #000033; }
+.cat-table tr:nth-child(even) { background: #000022; }
+
+.cat-win { color: #00FF00; font-weight: bold; }
+.cat-lose { color: #FF4444; }
+.cat-tie { color: #888; }
+
+.matchup-blurb {
+    padding: 10px 14px;
+    color: #CCCCCC;
+    font-size: 13px;
+    line-height: 1.5;
+    border-top: 1px dashed #333366;
+}
+
+/* Lock of the week */
+.lock-banner {
+    text-align: center;
+    background: linear-gradient(90deg, #4d0000, #660000, #4d0000);
+    border: 2px solid #FF6B35;
+    padding: 8px;
+    margin: 10px 0;
+    font-size: 18px;
+    color: #FFD700;
+    text-shadow: 1px 1px 0px #000;
+    letter-spacing: 2px;
+}
+
+/* ================================
+   PAGE 3 — UNDER CONSTRUCTION
+   ================================ */
+
+.construction-zone {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.construction-title {
+    font-size: 28px;
+    color: #FFD700;
+    text-shadow: 2px 2px 0px #FF6B35;
+    animation: blink-text 1.5s step-end infinite;
+}
+
+@keyframes blink-text {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+.construction-subtitle {
+    font-size: 16px;
+    color: #FF7F7F;
+    margin: 16px 0;
+}
+
+.construction-message {
+    font-size: 14px;
+    color: #00BFFF;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.fake-form {
+    margin: 24px auto;
+    max-width: 400px;
+    text-align: left;
+    background: #000033;
+    border: 2px inset #666;
+    padding: 12px;
+}
+
+.fake-form label {
+    display: block;
+    color: #FFD700;
+    font-size: 12px;
+    margin: 6px 0 2px 0;
+}
+
+.fake-form input, .fake-form textarea {
+    width: 95%;
+    padding: 4px;
+    font-family: 'Comic Sans MS', cursive;
+    background: #FFF;
+    border: 2px inset #999;
+    font-size: 12px;
+}
+
+.fake-form textarea {
+    height: 60px;
+}
+
+.fake-form button {
+    margin-top: 8px;
+    background: #C0C0C0;
+    border: 2px outset #FFF;
+    padding: 4px 20px;
+    font-family: 'MS Sans Serif', sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+
+.site-footer {
+    text-align: center;
+    font-size: 10px;
+    color: #666;
+    padding: 10px 0 4px 0;
+    border-top: 1px solid #333;
+    margin-top: 10px;
+}
+
+.site-footer a {
+    color: #00BFFF;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+    color: #FFD700;
+}
+
+.visitor-counter {
+    font-family: 'Courier New', monospace;
+    background: #000;
+    color: #00FF00;
+    padding: 2px 6px;
+    border: 1px inset #333;
+    font-size: 11px;
+}
+
+/* Links */
+a { color: #00BFFF; text-decoration: none; }
+a:hover { color: #FFD700; text-decoration: underline; }
+a:visited { color: #CC99FF; }
+
+/* General table styling */
+table {
+    border-collapse: collapse;
+}
+
+/* "Coming soon" placeholder */
+.coming-soon {
+    text-align: center;
+    padding: 40px;
+    color: #888;
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* Scrollbar styling for that extra 90s feel */
+::-webkit-scrollbar { width: 16px; }
+::-webkit-scrollbar-track { background: #C0C0C0; border: 1px solid #808080; }
+::-webkit-scrollbar-thumb { background: #808080; border: 2px outset #C0C0C0; }
+
+/* Mobile — don't try too hard, it's a 90s site */
+@media (max-width: 600px) {
+    .site-title { font-size: 24px; }
+    .rank-number { font-size: 28px; min-width: 36px; }
+    .rank-team-name { font-size: 15px; }
+    .matchup-header { flex-direction: column; }
+    .tab-btn { font-size: 11px; padding: 4px 10px; }
+}

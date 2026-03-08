@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>xpage.com/cfbl</title>
+    <link rel="stylesheet" href="/static/css/geocities.css">
+</head>
+<body>
+
+<div class="page-wrapper">
+
+    <!-- ===== HEADER ===== -->
+    <div class="site-header">
+        <span class="palm-left">&#127796;</span>
+        <h1 class="site-title">xpage.com/cfbl</h1>
+        <span class="palm-right">&#127796;</span>
+        <p class="site-subtitle">~ Caribbean Fantasy Baseball League ~</p>
+    </div>
+
+    <marquee class="marquee-bar" scrollamount="3">
+        &#127796; Welcome to the CFBL Power Rankings &amp; Matchup Center &#127796; &#9728;&#65039; Where every week is island time &#9728;&#65039; &#127796; Lineups lock when the first pitch is thrown &#127796; &#9917; 8x8 H2H Categories &#9917;
+    </marquee>
+
+    <hr class="tropical-divider">
+
+    <!-- ===== TAB BAR ===== -->
+    <div class="tab-bar">
+        <button class="tab-btn active" data-tab="rankings">&#9734; Power Rankings</button>
+        <button class="tab-btn" data-tab="matchups">&#9876;&#65039; Matchups</button>
+        <button class="tab-btn" data-tab="page3">&#128196; Page 3</button>
+        <button class="music-btn tab-btn">&#127925; Island Vibes &#127925;</button>
+    </div>
+
+    <hr class="tropical-divider">
+
+    <!-- ===== TAB 1: POWER RANKINGS ===== -->
+    <div id="tab-rankings" class="tab-content active">
+        {% if rankings and rankings.rankings %}
+        <h2 class="section-header">&#127942; CFBL POWER RANKINGS &mdash; {{ rankings.week_label|upper }} &#127942;</h2>
+        <p class="section-subheader">Last updated: {{ rankings.generated_at[:10] }} | Simulation-based: every team vs every team, 14 active categories</p>
+
+        {% for team in rankings.rankings %}
+        <div class="ranking-card">
+            <div class="ranking-header">
+                <div class="rank-number">#{{ team.rank }}</div>
+                <div class="rank-delta">
+                    {% if team.delta == "NEW" %}
+                        <span class="delta-new">NEW</span>
+                    {% elif team.delta and team.delta > 0 %}
+                        <span class="delta-up">&#9650; {{ team.delta }}</span>
+                    {% elif team.delta and team.delta < 0 %}
+                        <span class="delta-down">&#9660; {{ team.delta|abs }}</span>
+                    {% else %}
+                        <span class="delta-same">&mdash;</span>
+                    {% endif %}
+                </div>
+                <div class="rank-team-info">
+                    <div class="rank-team-name">{{ team.team_name }}</div>
+                    <div class="rank-record">
+                        vs Field: {{ team.matchup_record }} | Categories: {{ team.cat_record }} | Win%: {{ "%.3f"|format(team.win_pct) }}
+                    </div>
+                    <div class="rank-badges">
+                        {% if team.strengths %}
+                            {% for s in team.strengths %}
+                            <span class="badge badge-strength">&#9650; {{ s }}</span>
+                            {% endfor %}
+                        {% endif %}
+                        {% if team.weaknesses %}
+                            {% for w in team.weaknesses %}
+                            <span class="badge badge-weakness">&#9660; {{ w }}</span>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% if team.blurb %}
+            <div class="rank-blurb">{{ team.blurb }}</div>
+            {% endif %}
+        </div>
+        {% endfor %}
+
+        {% else %}
+        <div class="coming-soon">
+            <h2 class="section-header">&#127942; POWER RANKINGS &#127942;</h2>
+            <p>Rankings are being computed... check back soon, mon.</p>
+            <p style="font-size: 32px;">&#127796;&#9203;&#127796;</p>
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- ===== TAB 2: MATCHUPS ===== -->
+    <div id="tab-matchups" class="tab-content">
+        {% if matchups and matchups.matchups %}
+        <h2 class="section-header">&#9876;&#65039; {{ matchups.week_label|upper }} MATCHUPS &#9876;&#65039;</h2>
+        <p class="section-subheader">Hypothetical lines based on projected category performance | For entertainment only</p>
+
+        {% if matchups.lock_of_the_week %}
+        <div class="lock-banner">
+            &#128274; LOCK OF THE WEEK: {{ matchups.lock_of_the_week }} &#128274;
+        </div>
+        {% endif %}
+
+        {% for m in matchups.matchups %}
+        <div class="matchup-card">
+            <div class="matchup-header">
+                <div class="matchup-team">
+                    <div class="matchup-team-name">{{ m.team_a.name }}</div>
+                    <div class="matchup-moneyline {% if m.favorite == 'team_a' %}ml-favorite{% else %}ml-underdog{% endif %}">
+                        {{ m.moneyline_a }}
+                    </div>
+                </div>
+                <div class="matchup-vs">VS</div>
+                <div class="matchup-team">
+                    <div class="matchup-team-name">{{ m.team_b.name }}</div>
+                    <div class="matchup-moneyline {% if m.favorite == 'team_b' %}ml-favorite{% else %}ml-underdog{% endif %}">
+                        {{ m.moneyline_b }}
+                    </div>
+                </div>
+            </div>
+            <div class="matchup-prediction">
+                Projected: <span class="matchup-predicted-score">{{ m.predicted_score }}</span>
+                {% if m.favorite == 'team_a' %}
+                    &nbsp;({{ m.team_a.name }} favored)
+                {% elif m.favorite == 'team_b' %}
+                    &nbsp;({{ m.team_b.name }} favored)
+                {% else %}
+                    &nbsp;(Pick'em)
+                {% endif %}
+            </div>
+
+            {% if m.cat_breakdown %}
+            <table class="cat-table">
+                <thead>
+                    <tr>
+                        <th>Cat</th>
+                        <th>{{ m.team_a.name[:15] }}</th>
+                        <th>{{ m.team_b.name[:15] }}</th>
+                        <th>Edge</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for cat_name, cat_data in m.cat_breakdown.items() %}
+                    <tr>
+                        <td><strong>{{ cat_name }}</strong></td>
+                        <td class="{% if cat_data.edge == 'a' %}cat-win{% elif cat_data.edge == 'b' %}cat-lose{% else %}cat-tie{% endif %}">
+                            {% if cat_data.a is not none %}{{ "%.1f"|format(cat_data.a) if cat_data.a >= 1 else "%.3f"|format(cat_data.a) }}{% else %}-{% endif %}
+                        </td>
+                        <td class="{% if cat_data.edge == 'b' %}cat-win{% elif cat_data.edge == 'a' %}cat-lose{% else %}cat-tie{% endif %}">
+                            {% if cat_data.b is not none %}{{ "%.1f"|format(cat_data.b) if cat_data.b >= 1 else "%.3f"|format(cat_data.b) }}{% else %}-{% endif %}
+                        </td>
+                        <td>
+                            {% if cat_data.edge == 'a' %}<span class="cat-win">&#9668;</span>
+                            {% elif cat_data.edge == 'b' %}<span class="cat-win">&#9658;</span>
+                            {% else %}<span class="cat-tie">TIE</span>{% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% endif %}
+
+            {% if m.blurb %}
+            <div class="matchup-blurb">{{ m.blurb }}</div>
+            {% endif %}
+        </div>
+        {% endfor %}
+
+        {% else %}
+        <div class="coming-soon">
+            <h2 class="section-header">&#9876;&#65039; MATCHUPS &#9876;&#65039;</h2>
+            <p>Matchup previews drop before the week starts... sit tight.</p>
+            <p style="font-size: 32px;">&#127796;&#9876;&#65039;&#127796;</p>
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- ===== TAB 3: PAGE 3 ===== -->
+    <div id="tab-page3" class="tab-content">
+        <div class="construction-zone">
+            <p style="font-size: 48px;">&#128679;&#127796;&#128679;</p>
+            <h2 class="construction-title">!! UNDER CONSTRUCTION !!</h2>
+            <p class="construction-subtitle">~ Page 3 ~</p>
+            <hr class="tropical-divider">
+            <p class="construction-message">
+                "Check back soon, mon. Dis page gonna have all de vibes."
+            </p>
+            <p style="color: #888; font-size: 11px;">Last updated: never &nbsp;|&nbsp; Articles written: 0 &nbsp;|&nbsp; Motivation level: low</p>
+
+            <hr class="tropical-divider">
+
+            <p style="color: #FFD700; font-size: 14px; margin-top: 20px;">&#128233; Submit Your Content</p>
+            <div class="fake-form">
+                <label>Your Name:</label>
+                <input type="text" placeholder="e.g. Washed Up Manager" disabled>
+                <label>Your Hot Take:</label>
+                <textarea placeholder="Why your team is actually good (it isn't)..." disabled></textarea>
+                <label>Proof You Won a Championship (required):</label>
+                <input type="file" disabled>
+                <br>
+                <button disabled onclick="return false;">Submit (broken)</button>
+                <p style="color: #FF4444; font-size: 10px; margin-top: 4px;">* Form does not work. Like your bullpen.</p>
+            </div>
+
+            <p style="font-size: 32px; margin-top: 20px;">&#127796;&#127940;&#127796;</p>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <hr class="tropical-divider">
+    <div class="site-footer">
+        You are visitor #<span class="visitor-counter" id="visitor-count">004,207</span>
+        &nbsp;|&nbsp;
+        Best viewed in Netscape Navigator 4.0
+        &nbsp;|&nbsp;
+        <a href="javascript:void(0)" onclick="alert('The guestbook is under construction. Like everything else.')">Sign my Guestbook</a>
+        &nbsp;|&nbsp;
+        &copy; 2026 CFBL
+        <br>
+        <span style="color: #444; font-size: 9px;">Powered by island time &amp; bad decisions</span>
+    </div>
+
+</div>
+
+<!-- Audio player (hidden) -->
+<audio id="island-audio" loop preload="none">
+    <source src="/static/audio/island.mp3" type="audio/mpeg">
+</audio>
+
+<script src="/static/js/cfbl.js"></script>
+
+</body>
+</html>
