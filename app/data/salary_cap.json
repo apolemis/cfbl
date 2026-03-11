@@ -33,7 +33,7 @@
     {
       "id": 1,
       "owner": "Drew",
-      "starting_salary": 272,
+      "starting_salary": 262,
       "picks": [
         1,
         2,
@@ -67,7 +67,7 @@
     {
       "id": 2,
       "owner": "Will",
-      "starting_salary": 141,
+      "starting_salary": 140,
       "picks": [
         1,
         2,
@@ -101,7 +101,7 @@
     {
       "id": 3,
       "owner": "Bozzi",
-      "starting_salary": 297,
+      "starting_salary": 225,
       "picks": [
         1,
         2,
@@ -135,7 +135,7 @@
     {
       "id": 4,
       "owner": "Cha",
-      "starting_salary": 151,
+      "starting_salary": 148,
       "picks": [
         1,
         2,
@@ -325,7 +325,7 @@
     {
       "id": 9,
       "owner": "Gio",
-      "starting_salary": 293,
+      "starting_salary": 303,
       "picks": [
         1,
         2,
@@ -393,7 +393,7 @@
     {
       "id": 11,
       "owner": "Morrill",
-      "starting_salary": 260,
+      "starting_salary": 255,
       "picks": [
         1,
         2,

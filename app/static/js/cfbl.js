@@ -497,3 +497,297 @@ if (musicBtn) {
     refreshOverview();
     refreshTradeHistory();
 })();
+
+/* ============================================
+   Dinkers Vegas — Slot Machine
+   ============================================ */
+var dinkersVegas = (function() {
+    // ---- SYMBOL DEFINITIONS ----
+    var SYMBOLS = [
+        { id: 0, name: 'Dinkers Miracle', img: '/static/images/slots/dinkersmiracle.png', desc: 'Half-court heave' },
+        { id: 1, name: 'LeDrew James',    img: '/static/images/slots/ledrewjames.png',    desc: 'Husky man dunking' },
+        { id: 2, name: 'Galker Dupotton', img: '/static/images/slots/galkerdupotton.png', desc: 'Two-headed player' },
+        { id: 3, name: 'Jordan Abrams',   img: '/static/images/slots/jordanabrams.png',   desc: 'Ball off the rim' },
+        { id: 4, name: 'Dr Funk',         img: '/static/images/slots/drfunk.png',         desc: 'Funky doctor' },
+        { id: 5, name: 'Bjorkdal',        img: '/static/images/slots/bjorkdal.png',       desc: 'Confused coach' }
+    ];
+
+    var NUM_SYMBOLS   = SYMBOLS.length;
+    var BET           = 25;
+    var PAYOUT        = 900;   // net win = 875
+    var STARTING_BANK = 1000;
+    var SPIN_CYCLES   = 4;     // full rotations before landing
+
+    // ---- STATE ----
+    var bank = parseInt(localStorage.getItem('dinkers_bank') || STARTING_BANK, 10);
+    var spinning = false;
+
+    // ---- DOM REFS ----
+    var bankEl         = document.getElementById('slot-bank');
+    var resultEl       = document.getElementById('slot-result');
+    var spinBtn        = document.getElementById('slot-spin-btn');
+    var overlayEl      = document.getElementById('slot-jackpot-overlay');
+    var jackpotAmtEl   = document.getElementById('slot-jackpot-amount');
+    var confettiEl     = document.getElementById('slot-confetti');
+
+    var reelStrips = [
+        document.getElementById('reel-strip-0'),
+        document.getElementById('reel-strip-1'),
+        document.getElementById('reel-strip-2')
+    ];
+
+    // Bail if elements don't exist (tab not in DOM)
+    if (!reelStrips[0]) return { spin: function(){}, resetBank: function(){} };
+
+    // ---- HELPERS ----
+    function shuffleArray(arr) {
+        var a = arr.slice();
+        for (var i = a.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var tmp = a[i]; a[i] = a[j]; a[j] = tmp;
+        }
+        return a;
+    }
+
+    function renderSymbol(idx) {
+        var s = SYMBOLS[idx];
+        return '<div class="slot-symbol" data-symbol="' + s.id + '">' +
+               '<img src="' + s.img + '" alt="' + s.name + '" draggable="false">' +
+               '<div class="slot-symbol-name">' + s.name + '</div>' +
+               '</div>';
+    }
+
+    function getSymbolHeight() {
+        var win = document.getElementById('reel-window-0');
+        return win ? win.clientHeight : 200;
+    }
+
+    // Build reel strip: SPIN_CYCLES full shuffled sets + 1 landing symbol
+    function buildReelStrip(stripEl, landingIndex) {
+        var html = '';
+        for (var cycle = 0; cycle < SPIN_CYCLES; cycle++) {
+            var order = shuffleArray([0, 1, 2, 3, 4, 5]);
+            for (var j = 0; j < order.length; j++) {
+                html += renderSymbol(order[j]);
+            }
+        }
+        html += renderSymbol(landingIndex);
+        stripEl.innerHTML = html;
+    }
+
+    // ---- BANK ----
+    function updateBank() {
+        if (bankEl) {
+            bankEl.textContent = '$' + bank.toLocaleString();
+            bankEl.className = 'slot-bank-amount' + (bank <= 0 ? ' bust' : '');
+        }
+        localStorage.setItem('dinkers_bank', bank.toString());
+        if (spinBtn) spinBtn.disabled = bank < BET || spinning;
+    }
+
+    // ---- SPIN ----
+    function spin() {
+        if (spinning || bank < BET) return;
+        spinning = true;
+
+        // Clear previous result
+        if (resultEl) {
+            resultEl.textContent = '';
+            resultEl.className = 'slot-result';
+        }
+
+        // Deduct bet
+        bank -= BET;
+        updateBank();
+
+        // Pick 3 random results
+        var results = [
+            Math.floor(Math.random() * NUM_SYMBOLS),
+            Math.floor(Math.random() * NUM_SYMBOLS),
+            Math.floor(Math.random() * NUM_SYMBOLS)
+        ];
+
+        // Build reel strips
+        var totalPerReel = SPIN_CYCLES * NUM_SYMBOLS + 1;
+        var symbolHeight = getSymbolHeight();
+
+        for (var i = 0; i < 3; i++) {
+            buildReelStrip(reelStrips[i], results[i]);
+            reelStrips[i].style.transition = 'none';
+            reelStrips[i].style.transform = 'translateY(0)';
+            reelStrips[i].classList.remove('settling');
+        }
+
+        // Force reflow
+        void reelStrips[0].offsetHeight;
+
+        // Spin animation + staggered stops
+        var baseDelay = 800;
+        var stagger = 600;
+        var settleDuration = 600;
+        var spinIntervals = [];
+
+        for (var i = 0; i < 3; i++) {
+            (function(reelIndex) {
+                var offset = 0;
+                var speed = 20 + (reelIndex * 3);
+                var maxOffset = (totalPerReel - 1) * symbolHeight;
+
+                spinIntervals[reelIndex] = setInterval(function() {
+                    offset = (offset + speed) % maxOffset;
+                    reelStrips[reelIndex].style.transform = 'translateY(-' + offset + 'px)';
+                }, 16);
+
+                setTimeout(function() {
+                    clearInterval(spinIntervals[reelIndex]);
+                    var targetY = -((totalPerReel - 1) * symbolHeight);
+                    reelStrips[reelIndex].classList.add('settling');
+                    reelStrips[reelIndex].style.transform = 'translateY(' + targetY + 'px)';
+                }, baseDelay + (reelIndex * stagger));
+            })(i);
+        }
+
+        // Evaluate after all reels settled
+        var totalTime = baseDelay + (2 * stagger) + settleDuration + 100;
+        setTimeout(function() {
+            evaluateResult(results);
+        }, totalTime);
+    }
+
+    function evaluateResult(results) {
+        var isJackpot = (results[0] === results[1] && results[1] === results[2]);
+
+        if (isJackpot) {
+            bank += PAYOUT;
+            updateBank();
+            showJackpot(results[0]);
+        } else {
+            if (resultEl) {
+                if (bank <= 0) {
+                    resultEl.innerHTML = 'BUSTED! You\'re broke, mon. <a href="javascript:dinkersVegas.resetBank()" style="color:#00BFFF;">Get a new $1,000 stake?</a>';
+                    resultEl.className = 'slot-result bust';
+                } else {
+                    var msgs = [
+                        'No dice! Try again.',
+                        'The island takes your money...',
+                        'Tough break, mon.',
+                        'Not today, chief.',
+                        'The reels say NO.',
+                        'Better luck next spin!',
+                        'Close but no cigar.',
+                        'The house always... well, it\'s actually fair.'
+                    ];
+                    resultEl.textContent = msgs[Math.floor(Math.random() * msgs.length)];
+                    resultEl.className = 'slot-result lose';
+                }
+            }
+        }
+
+        spinning = false;
+        updateBank();
+    }
+
+    // ---- JACKPOT ----
+    function showJackpot(symbolIndex) {
+        if (!overlayEl) return;
+
+        var winnerName = SYMBOLS[symbolIndex].name;
+        if (jackpotAmtEl) {
+            jackpotAmtEl.textContent = '+$' + (PAYOUT - BET) + '  (' + winnerName + '!)';
+        }
+
+        spawnConfetti();
+        overlayEl.classList.add('active');
+
+        if (resultEl) {
+            resultEl.textContent = 'JACKPOT!!! ' + winnerName + '!!!';
+            resultEl.className = 'slot-result win';
+        }
+
+        var dismissHandler = function() {
+            overlayEl.classList.remove('active');
+            clearConfetti();
+            overlayEl.removeEventListener('click', dismissHandler);
+        };
+        overlayEl.addEventListener('click', dismissHandler);
+
+        setTimeout(function() {
+            overlayEl.classList.remove('active');
+            clearConfetti();
+        }, 5000);
+    }
+
+    function spawnConfetti() {
+        if (!confettiEl) return;
+        var colors = ['#FFD700', '#FF6B35', '#00BFFF', '#00FF00', '#FF69B4', '#FF4444', '#9B59B6'];
+        for (var i = 0; i < 80; i++) {
+            var piece = document.createElement('div');
+            piece.className = 'confetti-piece';
+            piece.style.left = Math.random() * 100 + '%';
+            piece.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            piece.style.animationDuration = (2 + Math.random() * 3) + 's';
+            piece.style.animationDelay = (Math.random() * 1.5) + 's';
+            piece.style.width = (6 + Math.random() * 10) + 'px';
+            piece.style.height = (6 + Math.random() * 10) + 'px';
+            confettiEl.appendChild(piece);
+        }
+    }
+
+    function clearConfetti() {
+        if (confettiEl) confettiEl.innerHTML = '';
+    }
+
+    // ---- LEGEND ----
+    function renderLegend() {
+        var grid = document.getElementById('slot-legend-grid');
+        if (!grid) return;
+        var html = '';
+        for (var i = 0; i < SYMBOLS.length; i++) {
+            var s = SYMBOLS[i];
+            html += '<div class="slot-legend-card">';
+            html += '<img src="' + s.img + '" alt="' + s.name + '">';
+            html += '<div class="slot-legend-name">' + s.name + '</div>';
+            html += '<div class="slot-legend-desc">' + s.desc + '</div>';
+            html += '</div>';
+        }
+        grid.innerHTML = html;
+    }
+
+    // ---- RESET ----
+    function resetBank() {
+        bank = STARTING_BANK;
+        updateBank();
+        if (resultEl) {
+            resultEl.textContent = 'Fresh stack! Let\'s ride.';
+            resultEl.className = 'slot-result';
+        }
+    }
+
+    // ---- INIT ----
+    function init() {
+        var totalPerReel = SPIN_CYCLES * NUM_SYMBOLS + 1;
+        var symbolHeight = getSymbolHeight();
+        for (var i = 0; i < 3; i++) {
+            var randomSym = Math.floor(Math.random() * NUM_SYMBOLS);
+            buildReelStrip(reelStrips[i], randomSym);
+            var targetY = -((totalPerReel - 1) * symbolHeight);
+            reelStrips[i].style.transform = 'translateY(' + targetY + 'px)';
+        }
+        updateBank();
+        renderLegend();
+
+        if (bank <= 0) {
+            if (resultEl) {
+                resultEl.innerHTML = 'You\'re busted! <a href="javascript:dinkersVegas.resetBank()" style="color:#00BFFF;">Get a new $1,000 stake?</a>';
+                resultEl.className = 'slot-result bust';
+            }
+        }
+    }
+
+    init();
+
+    return {
+        spin: spin,
+        resetBank: resetBank
+    };
+})();

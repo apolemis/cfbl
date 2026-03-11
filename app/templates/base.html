@@ -30,6 +30,7 @@
         <button class="tab-btn" data-tab="matchups">&#9876;&#65039; Matchups</button>
         <button class="tab-btn" data-tab="page3">&#128196; Page 3</button>
         <button class="tab-btn" data-tab="salarycap">&#128176; Salary Cap</button>
+        <button class="tab-btn" data-tab="dinkers">&#127920; Dinkers Vegas</button>
         <button class="music-btn tab-btn">&#127925; Island Vibes &#127925;</button>
     </div>
 
@@ -480,6 +481,74 @@
             <p>Salary cap data loading... check back soon, mon.</p>
         </div>
         {% endif %}
+    </div>
+
+    <!-- ===== TAB 5: DINKERS VEGAS ===== -->
+    <div id="tab-dinkers" class="tab-content">
+        <div class="vegas-container">
+            <div class="vegas-marquee">
+                <h2 class="vegas-title">&#127920; DINKERS VEGAS &#127920;</h2>
+                <p class="vegas-tagline">Where Legends Are Made &amp; Fortunes Are Lost</p>
+            </div>
+
+            <hr class="tropical-divider">
+
+            <div class="slot-machine">
+                <div class="slot-bank">
+                    <span class="slot-bank-label">BANK:</span>
+                    <span class="slot-bank-amount" id="slot-bank">$1,000</span>
+                </div>
+
+                <div class="slot-cabinet">
+                    <div class="slot-reels">
+                        <div class="slot-reel-window" id="reel-window-0">
+                            <div class="slot-reel-strip" id="reel-strip-0"></div>
+                        </div>
+                        <div class="slot-reel-window" id="reel-window-1">
+                            <div class="slot-reel-strip" id="reel-strip-1"></div>
+                        </div>
+                        <div class="slot-reel-window" id="reel-window-2">
+                            <div class="slot-reel-strip" id="reel-strip-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slot-controls">
+                    <div class="slot-bet-display">
+                        BET: <span id="slot-bet-amount">$25</span>
+                    </div>
+                    <button class="slot-spin-btn" id="slot-spin-btn" onclick="dinkersVegas.spin()">
+                        &#127920; PULL THE LEVER &#127920;
+                    </button>
+                </div>
+
+                <div class="slot-result" id="slot-result"></div>
+            </div>
+
+            <!-- Jackpot overlay -->
+            <div class="slot-jackpot-overlay" id="slot-jackpot-overlay">
+                <div class="slot-jackpot-text">&#128176; JACKPOT! &#128176;</div>
+                <div class="slot-jackpot-amount" id="slot-jackpot-amount">+$875</div>
+                <div class="slot-jackpot-dismiss">Click anywhere to dismiss</div>
+                <div class="slot-confetti" id="slot-confetti"></div>
+            </div>
+
+            <div class="slot-paytable">
+                <h3 class="slot-paytable-title">&#128176; PAYTABLE &#128176;</h3>
+                <div class="slot-paytable-row">
+                    <span>3 MATCHING SYMBOLS</span>
+                    <span class="slot-paytable-payout">WIN $900</span>
+                </div>
+                <div class="slot-paytable-odds">
+                    Odds: 1 in 36 &bull; Bet: $25/spin &bull; Fair game (EV = $0)
+                </div>
+            </div>
+
+            <div class="slot-legend">
+                <h3 class="slot-legend-title">&#127936; THE LEGENDS &#127936;</h3>
+                <div class="slot-legend-grid" id="slot-legend-grid"></div>
+            </div>
+        </div>
     </div>
 
     <!-- ===== FOOTER ===== -->
