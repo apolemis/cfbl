@@ -82,6 +82,14 @@ if (musicBtn) {
     });
 })();
 
+// Page 3 Archive toggle
+window.toggleArchive = function() {
+    var body = document.getElementById('page3-archive-body');
+    if (body) {
+        body.classList.toggle('open');
+    }
+};
+
 /* ============================================
    Salary Cap Tracker
    ============================================ */
