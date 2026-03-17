@@ -31,6 +31,7 @@
         <button class="tab-btn" data-tab="page3">&#128196; Page 3</button>
         <button class="tab-btn" data-tab="salarycap">&#128176; Salary Cap</button>
         <button class="tab-btn" data-tab="dinkers">&#127920; Dinkers Vegas</button>
+        <button class="tab-btn" data-tab="msgboard">&#128172; Message Board</button>
         <button class="music-btn tab-btn">&#127925; Island Vibes &#127925;</button>
     </div>
 
@@ -547,6 +548,37 @@
             <div class="slot-legend">
                 <h3 class="slot-legend-title">&#127936; THE LEGENDS &#127936;</h3>
                 <div class="slot-legend-grid" id="slot-legend-grid"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== TAB 6: MESSAGE BOARD ===== -->
+    <div id="tab-msgboard" class="tab-content">
+        <div class="msgboard-container">
+            <div class="msgboard-header">
+                <h2 class="section-header">&#128172; CFBL MESSAGE BOARD &#128172;</h2>
+                <p class="section-subheader">Post your takes, trash talk, and island wisdom. All messages persist forever&hellip; like a bad tattoo.</p>
+            </div>
+
+            <div class="msgboard-form">
+                <div class="msgboard-form-row">
+                    <label class="msgboard-label" for="msg-name">Your Name:</label>
+                    <input type="text" id="msg-name" class="msgboard-input" maxlength="50" placeholder="e.g. Island Tony">
+                </div>
+                <div class="msgboard-form-row">
+                    <label class="msgboard-label" for="msg-text">Message:</label>
+                    <textarea id="msg-text" class="msgboard-textarea" maxlength="500" placeholder="Drop your hottest take..."></textarea>
+                </div>
+                <div class="msgboard-form-row">
+                    <button class="trade-btn simulate-btn" onclick="postMessage()">&#128172; Post Message</button>
+                </div>
+                <div class="msgboard-status" id="msg-status"></div>
+            </div>
+
+            <hr class="tropical-divider">
+
+            <div class="msgboard-list" id="msgboard-list">
+                <p class="no-trades">Loading messages&hellip;</p>
             </div>
         </div>
     </div>

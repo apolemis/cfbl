@@ -5,6 +5,8 @@ from fastapi.responses import HTMLResponse, JSONResponse
 from pathlib import Path
 from pydantic import BaseModel
 import json
+import time
+import uuid
 
 app = FastAPI(title="CFBL")
 BASE_DIR = Path(__file__).parent
@@ -12,6 +14,7 @@ app.mount("/static", StaticFiles(directory=str(BASE_DIR / "static")), name="stat
 templates = Jinja2Templates(directory=str(BASE_DIR / "templates"))
 
 SALARY_CAP_PATH = BASE_DIR / "data" / "salary_cap.json"
+MESSAGES_PATH = BASE_DIR / "data" / "messages.json"
 
 
 def load_latest(subdir):
@@ -220,6 +223,71 @@ async def undo_trade():
 
     save_salary_cap(data)
     return {"success": True, "message": "Last trade undone"}
+
+
+## ============================================
+## Message Board
+## ============================================
+
+def load_messages():
+    if MESSAGES_PATH.exists():
+        return json.loads(MESSAGES_PATH.read_text())
+    return []
+
+
+def save_messages(messages):
+    MESSAGES_PATH.write_text(json.dumps(messages, indent=2))
+
+
+class MessageRequest(BaseModel):
+    name: str
+    message: str
+
+
+class VoteRequest(BaseModel):
+    message_id: str
+    vote_type: str  # "thumbsup" or "lock"
+
+
+@app.get("/api/messages")
+async def get_messages():
+    return load_messages()
+
+
+@app.post("/api/messages")
+async def post_message(msg: MessageRequest):
+    name = msg.name.strip()[:50]
+    message = msg.message.strip()[:500]
+    if not name or not message:
+        return JSONResponse({"error": "Name and message are required"}, status_code=400)
+
+    messages = load_messages()
+    new_msg = {
+        "id": str(uuid.uuid4())[:8],
+        "name": name,
+        "message": message,
+        "timestamp": int(time.time()),
+        "thumbsup": 0,
+        "lock": 0,
+    }
+    messages.insert(0, new_msg)
+    save_messages(messages)
+    return new_msg
+
+
+@app.post("/api/messages/vote")
+async def vote_message(vote: VoteRequest):
+    if vote.vote_type not in ("thumbsup", "lock"):
+        return JSONResponse({"error": "Invalid vote type"}, status_code=400)
+
+    messages = load_messages()
+    for m in messages:
+        if m["id"] == vote.message_id:
+            m[vote.vote_type] = m.get(vote.vote_type, 0) + 1
+            save_messages(messages)
+            return {"success": True, "thumbsup": m["thumbsup"], "lock": m["lock"]}
+
+    return JSONResponse({"error": "Message not found"}, status_code=404)
 
 
 @app.get("/health")

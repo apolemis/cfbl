@@ -791,3 +791,132 @@ var dinkersVegas = (function() {
         resetBank: resetBank
     };
 })();
+
+/* ============================================
+   Message Board
+   ============================================ */
+(function() {
+    var listEl = document.getElementById('msgboard-list');
+    if (!listEl) return;
+
+    function timeAgo(ts) {
+        var now = Math.floor(Date.now() / 1000);
+        var diff = now - ts;
+        if (diff < 60) return 'just now';
+        if (diff < 3600) return Math.floor(diff / 60) + 'm ago';
+        if (diff < 86400) return Math.floor(diff / 3600) + 'h ago';
+        if (diff < 604800) return Math.floor(diff / 86400) + 'd ago';
+        var d = new Date(ts * 1000);
+        return (d.getMonth() + 1) + '/' + d.getDate() + '/' + d.getFullYear();
+    }
+
+    function escapeHtml(str) {
+        var div = document.createElement('div');
+        div.appendChild(document.createTextNode(str));
+        return div.innerHTML;
+    }
+
+    function renderMessages(messages) {
+        if (!messages || messages.length === 0) {
+            listEl.innerHTML = '<p class="no-trades">No messages yet. Be the first to post, mon.</p>';
+            return;
+        }
+        var html = '';
+        for (var i = 0; i < messages.length; i++) {
+            var m = messages[i];
+            html += '<div class="msg-card" id="msg-' + m.id + '">';
+            html += '<div class="msg-card-header">';
+            html += '<span class="msg-author">' + escapeHtml(m.name) + '</span>';
+            html += '<span class="msg-timestamp">' + timeAgo(m.timestamp) + '</span>';
+            html += '</div>';
+            html += '<div class="msg-body">' + escapeHtml(m.message) + '</div>';
+            html += '<div class="msg-footer">';
+            html += '<button class="msg-vote-btn" onclick="voteMessage(\'' + m.id + '\',\'thumbsup\')">';
+            html += '\uD83D\uDC4D <span class="msg-vote-count" id="vote-thumbsup-' + m.id + '">' + (m.thumbsup || 0) + '</span>';
+            html += '</button>';
+            html += '<button class="msg-vote-btn" onclick="voteMessage(\'' + m.id + '\',\'lock\')">';
+            html += '\uD83D\uDD12 <span class="msg-vote-count" id="vote-lock-' + m.id + '">' + (m.lock || 0) + '</span>';
+            html += '</button>';
+            html += '</div>';
+            html += '</div>';
+        }
+        listEl.innerHTML = html;
+    }
+
+    function loadMessages() {
+        fetch('/api/messages')
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+            renderMessages(data);
+        })
+        .catch(function() {
+            listEl.innerHTML = '<p class="no-trades">Failed to load messages. Try refreshing.</p>';
+        });
+    }
+
+    window.postMessage = function() {
+        var nameEl = document.getElementById('msg-name');
+        var textEl = document.getElementById('msg-text');
+        var statusEl = document.getElementById('msg-status');
+        var name = (nameEl.value || '').trim();
+        var message = (textEl.value || '').trim();
+
+        if (!name || !message) {
+            if (statusEl) {
+                statusEl.style.color = '#FF4444';
+                statusEl.textContent = 'Fill in both name and message, mon.';
+            }
+            return;
+        }
+
+        fetch('/api/messages', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name: name, message: message })
+        })
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+            if (data.error) {
+                if (statusEl) {
+                    statusEl.style.color = '#FF4444';
+                    statusEl.textContent = data.error;
+                }
+                return;
+            }
+            textEl.value = '';
+            if (statusEl) {
+                statusEl.style.color = '#00FF00';
+                statusEl.textContent = 'Message posted!';
+                setTimeout(function() { statusEl.textContent = ''; }, 3000);
+            }
+            loadMessages();
+        })
+        .catch(function() {
+            if (statusEl) {
+                statusEl.style.color = '#FF4444';
+                statusEl.textContent = 'Failed to post. Try again.';
+            }
+        });
+    };
+
+    window.voteMessage = function(msgId, voteType) {
+        fetch('/api/messages/vote', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ message_id: msgId, vote_type: voteType })
+        })
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+            if (data.success) {
+                var thumbEl = document.getElementById('vote-thumbsup-' + msgId);
+                var lockEl = document.getElementById('vote-lock-' + msgId);
+                if (thumbEl) thumbEl.textContent = data.thumbsup;
+                if (lockEl) lockEl.textContent = data.lock;
+            }
+        })
+        .catch(function() {});
+    };
+
+    // Load messages on init
+    loadMessages();
+})();

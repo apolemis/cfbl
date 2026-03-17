@@ -1258,6 +1258,141 @@ table {
     margin-top: 2px;
 }
 
+/* ================================
+   MESSAGE BOARD
+   ================================ */
+
+.msgboard-container {
+    padding: 8px 0;
+}
+
+.msgboard-form {
+    background: #000033;
+    border: 2px solid #333366;
+    padding: 14px;
+    margin: 10px 0;
+}
+
+.msgboard-form-row {
+    margin-bottom: 8px;
+}
+
+.msgboard-label {
+    display: block;
+    color: #FFD700;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.msgboard-input {
+    width: 95%;
+    padding: 4px;
+    font-family: 'Comic Sans MS', cursive;
+    background: #FFF;
+    border: 2px inset #999;
+    font-size: 12px;
+}
+
+.msgboard-textarea {
+    width: 95%;
+    padding: 4px;
+    font-family: 'Comic Sans MS', cursive;
+    background: #FFF;
+    border: 2px inset #999;
+    font-size: 12px;
+    height: 60px;
+    resize: vertical;
+}
+
+.msgboard-status {
+    margin-top: 6px;
+    font-size: 12px;
+    min-height: 18px;
+    text-align: center;
+}
+
+.msgboard-list {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.msg-card {
+    background: #000033;
+    border: 2px solid #333366;
+    margin: 8px 0;
+    padding: 0;
+}
+
+.msg-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 12px;
+    background: linear-gradient(180deg, #001a4d 0%, #000033 100%);
+    border-bottom: 1px solid #333366;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.msg-author {
+    font-weight: bold;
+    color: #00BFFF;
+    font-size: 14px;
+    text-shadow: 1px 1px 0px #000;
+}
+
+.msg-timestamp {
+    font-size: 10px;
+    color: #666;
+    font-family: 'Tahoma', monospace;
+}
+
+.msg-body {
+    padding: 10px 14px;
+    color: #CCCCCC;
+    font-size: 13px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+.msg-footer {
+    display: flex;
+    gap: 8px;
+    padding: 6px 12px;
+    border-top: 1px dashed #333366;
+    align-items: center;
+}
+
+.msg-vote-btn {
+    background: #000022;
+    border: 2px outset #444;
+    padding: 3px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #CCC;
+    font-family: 'MS Sans Serif', 'Tahoma', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.msg-vote-btn:hover {
+    background: #001a4d;
+    border-color: #666;
+}
+
+.msg-vote-btn:active {
+    border-style: inset;
+}
+
+.msg-vote-count {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    color: #FFD700;
+}
+
 /* Mobile — don't try too hard, it's a 90s site */
 @media (max-width: 600px) {
     .site-title { font-size: 24px; }
