@@ -2,230 +2,8 @@
   "rankings": [
     {
       "rank": 1,
-      "prev_rank": 1,
-      "delta": 0,
-      "team_id": 8,
-      "team_name": "Universal Basic Civale",
-      "matchup_record": "11-0-0",
-      "cat_record": "116-37-23",
-      "win_pct": 1.0,
-      "strengths": [
-        "HR",
-        "R",
-        "OBP"
-      ],
-      "weaknesses": [
-        "QS",
-        "W",
-        "K"
-      ],
-      "team_totals": {
-        "era": 3.29,
-        "rbi": 920.1,
-        "whip": 1.14,
-        "sb": 99.2,
-        "hr": 301.3,
-        "avg": 0.265,
-        "kbb": 3.81,
-        "w": 52.0,
-        "r": 952.4,
-        "obp": 0.359,
-        "qs": 39.2,
-        "svh": 153.1,
-        "slg": 0.477,
-        "k": 931.5
-      },
-      "blurb": "Week 1 result: W 11-3 vs Duran Duran. Absolutely annihilated them. Judge went deep three times in the first four games. Soto walked eleven times because opposing pitchers are cowards, which is smart, because the alternative is letting Juan Soto swing the bat, which is how you end up on a highlight reel. Harper and Freeman are just casually producing like it's 2021 and they're in a contract year simultaneously. The pitching strategy remains reliever-only chaos — Mason Miller is touching 103 mph and Cade Smith has not allowed a baserunner since approximately February. Crochet and Webb provide just enough SP volume to keep the ratios elite without actually needing to win games. This team doesn't have weaknesses. It has categories it chooses not to compete in. There's a difference. The rest of the league is playing for second place and most of them know it."
-    },
-    {
-      "rank": 2,
-      "prev_rank": 7,
-      "delta": 5,
-      "team_id": 6,
-      "team_name": "Implicitly Explicit",
-      "matchup_record": "9-1-1",
-      "cat_record": "110-44-22",
-      "win_pct": 0.864,
-      "strengths": [
-        "K",
-        "QS",
-        "SLG"
-      ],
-      "weaknesses": [
-        "SB",
-        "SV+H",
-        "AVG"
-      ],
-      "team_totals": {
-        "era": 3.38,
-        "rbi": 828.4,
-        "whip": 1.12,
-        "sb": 105.6,
-        "hr": 264.2,
-        "avg": 0.262,
-        "kbb": 3.65,
-        "w": 76.1,
-        "r": 853.7,
-        "obp": 0.341,
-        "qs": 82.3,
-        "svh": 68.4,
-        "slg": 0.472,
-        "k": 1305.8
-      },
-      "blurb": "Week 1 result: L 5-8 vs Kings of Castillo and Leon. Lost with half the roster on the bench. Didn't matter. Still doesn't matter. Because this manager appears to have finally discovered the 'set lineup' button, and now the rest of the league has a problem. Devers, Machado, Bregman, Riley Greene, Royce Lewis — that's five guys who would start on literally any team in this league, and they were all just sitting there in Week 1 like luggage at baggage claim. The pitching is even scarier: Strider is back, Hunter Greene throws 100 mph on his off days, Bryce Miller is a Cy Young sleeper, and Roki Sasaki just came over from Japan to personally ruin batting averages. Wait...wait...wait...wait — 1,305 projected strikeouts? That's not a pitching staff, that's a public safety hazard. The prospect stash (Bazzana, Basallo, Eldridge, Crews) means this team is going to be terrifying for years. The Week 1 loss is an asterisk on an asterisk. This is the number two team in the league and it might not stay number two for long."
-    },
-    {
-      "rank": 3,
-      "prev_rank": 2,
-      "delta": -1,
-      "team_id": 7,
-      "team_name": "Young and Yandy Indiana Drift",
-      "matchup_record": "8-1-2",
-      "cat_record": "105-49-22",
-      "win_pct": 0.818,
-      "strengths": [
-        "R",
-        "RBI",
-        "AVG"
-      ],
-      "weaknesses": [
-        "QS",
-        "W",
-        "K"
-      ],
-      "team_totals": {
-        "era": 3.68,
-        "rbi": 846.3,
-        "whip": 1.155,
-        "sb": 131.8,
-        "hr": 245.6,
-        "avg": 0.265,
-        "kbb": 3.83,
-        "w": 58.2,
-        "r": 897.1,
-        "obp": 0.34,
-        "qs": 56.3,
-        "svh": 93.4,
-        "slg": 0.448,
-        "k": 955.2
-      },
-      "blurb": "Week 1 result: L 5-9 vs Nine Spoons One Brûlée. Look. Bobby Witt Jr. is going to hit .300 with 30 homers and 30 steals and make it look like a regular Tuesday. Lindor is a perennial MVP candidate. Ketel Marte doesn't get enough credit and probably never will. The lineup, when fully deployed, is the deepest in the league — Olson, Chourio, Nimmo, Happ, Kwan, Vientos, Murakami all push for playing time like it's a Tokyo subway at rush hour. Wheeler and Gilbert anchor the rotation. So why the Week 1 loss? Because the lineup reportedly still wasn't fully optimized, and Nine Spoons' pitching went nuclear. Fine. That's a Week 1 problem, not a Season problem. This team drops one spot because Implicitly Explicit woke up, but the floor here is incredibly high. Set the lineup. Win the league. It's not complicated."
-    },
-    {
-      "rank": 4,
-      "prev_rank": 8,
-      "delta": 4,
-      "team_id": 5,
-      "team_name": "CLAUDE 4 COMMISH",
-      "matchup_record": "7-2-2",
-      "cat_record": "96-58-22",
-      "win_pct": 0.727,
-      "strengths": [
-        "SB",
-        "R",
-        "HR"
-      ],
-      "weaknesses": [
-        "SV+H",
-        "W",
-        "K/BB"
-      ],
-      "team_totals": {
-        "era": 3.82,
-        "rbi": 718.5,
-        "whip": 1.21,
-        "sb": 172.3,
-        "hr": 240.8,
-        "avg": 0.261,
-        "kbb": 3.09,
-        "w": 52.8,
-        "r": 814.6,
-        "obp": 0.347,
-        "qs": 60.1,
-        "svh": 1.2,
-        "slg": 0.465,
-        "k": 860.3
-      },
-      "blurb": "Week 1 result: W 9-5 vs PO' BOYD SANDWICH. Ohtani hit four home runs in the first week of the season. Four. That's not a stat, that's a threat. Acuña looked like Acuña, Tatis looked like Tatis, and Elly De La Cruz stole three bases including one where the catcher didn't even bother throwing because what's the point. This team won its Week 1 matchup convincingly and the vibes are, medically speaking, immaculate. Cole, Glasnow, Snell, and Bibee give you a rotation that can compete with anyone on any given week. The problem remains the same: 1.2 projected saves plus holds for the entire season. That is functionally zero. This team is bringing a fighter jet to a war but forgot to pack any bullets for the side turret. If they ever figure out the bullpen — a trade, a waiver pickup, a prayer — this jumps to top three. Until then, the SV+H hole bleeds two free categories every single matchup. Still: 172 stolen bases. Nobody's catching that. Literally."
-    },
-    {
-      "rank": 5,
-      "prev_rank": 3,
-      "delta": -2,
-      "team_id": 10,
-      "team_name": "Moo Moo Cowsers",
-      "matchup_record": "7-2-2",
-      "cat_record": "92-62-22",
-      "win_pct": 0.727,
-      "strengths": [
-        "SV+H",
-        "W",
-        "QS"
-      ],
-      "weaknesses": [
-        "SB",
-        "OBP",
-        "R"
-      ],
-      "team_totals": {
-        "era": 3.50,
-        "rbi": 735.6,
-        "whip": 1.152,
-        "sb": 102.8,
-        "hr": 237.1,
-        "avg": 0.255,
-        "kbb": 3.50,
-        "w": 71.2,
-        "r": 718.4,
-        "obp": 0.32,
-        "qs": 71.4,
-        "svh": 96.2,
-        "slg": 0.456,
-        "k": 1079.3
-      },
-      "blurb": "Week 1 result: W 10-4 vs ShawSwank Redemption. Yamamoto threw seven innings of one-hit ball in his first start and looked every bit like the guy the Dodgers paid $325 million for. Hader converted three saves. Altuve went 9-for-21 because he's been doing this since before some of these prospects were born. This team did exactly what it was supposed to do against a weaker opponent, which is the fantasy baseball equivalent of eating your vegetables — it doesn't get you on SportsCenter but it keeps you alive. The drop from 3 to 5 isn't about Moo Moo getting worse, it's about other teams getting their acts together. Implicitly Explicit setting their lineup and CLAUDE 4 COMMISH's offense exploding simply pushed this roster down. The Yamamoto-Valdez-Eovaldi rotation is dependable, the Hader-Devin Williams closer tandem is elite, and Rooker continues to be the most underrated power bat in fantasy. Solid. Professional. Boring in the best possible way."
-    },
-    {
-      "rank": 6,
-      "prev_rank": 5,
-      "delta": -1,
-      "team_id": 1,
-      "team_name": "Nine Spoons One Brûlée",
-      "matchup_record": "5-3-3",
-      "cat_record": "86-68-22",
-      "win_pct": 0.591,
-      "strengths": [
-        "QS",
-        "K",
-        "W"
-      ],
-      "weaknesses": [
-        "SV+H",
-        "RBI",
-        "R"
-      ],
-      "team_totals": {
-        "era": 3.44,
-        "rbi": 643.8,
-        "whip": 1.138,
-        "sb": 120.7,
-        "hr": 201.4,
-        "avg": 0.257,
-        "kbb": 3.56,
-        "w": 67.4,
-        "r": 661.5,
-        "obp": 0.334,
-        "qs": 77.8,
-        "svh": 34.2,
-        "slg": 0.459,
-        "k": 1138.4
-      },
-      "blurb": "Week 1 result: W 9-5 vs Young and Yandy Indiana Drift. Paul Skenes threw seven shutout innings with 11 strikeouts in the season opener and the entire fantasy baseball internet collectively said 'oh no.' Ohtani the pitcher added six more K's in his start. The pitching on this team is genuinely unfair — Skenes, Ohtani (P), deGrom (if healthy, which is a big if, but when is it not), Cole Ragans, and Pepiot form a rotation that generates strikeouts the way normal rotations generate hits. Gunnar Henderson is the offensive anchor and he opened the week with two homers and a stolen base because apparently one elite skill isn't enough. The problem is everything else. 643 projected RBI is near the bottom of the league. The lineup after Henderson reads like a list of guys you'd pick in the 15th round and hope for the best. Matt Chapman is fine. Jazz Chisholm is exciting when healthy, which is seasonally. Brenton Doyle hits like he's allergic to contact. This team will win you every pitching category and lose you every hitting one, and you just have to decide if that math works out."
-    },
-    {
-      "rank": 7,
       "prev_rank": 6,
-      "delta": -1,
+      "delta": 5,
       "team_id": 11,
       "team_name": "Señor Burns",
       "matchup_record": "5-3-3",
@@ -257,14 +35,162 @@
         "slg": 0.45,
         "k": 1070.5
       },
-      "blurb": "Week 1 result: W 10-4 vs Boydz n the Hood. Chris Sale struck out 12 in his first start and for a brief, beautiful moment everyone remembered why they used to be terrified of Chris Sale. Kirby and Woo backed him up with a combined 13 innings of 2-run ball. The pitching on this team is legitimately elite — a 4.22 K/BB ratio is the best in the league by a full half-point, and the WHIP (1.122) would make most rotations weep. Vlad Jr. had a quiet opening week but the talent is obvious, and Arraez will hit .310 in his sleep. The problem is the supporting cast. Mike Trout is on here, which is either inspiring or sad depending on which version of Mike Trout shows up this year. Yelich, Muncy, Lowe, Ward — these are all fine players who collectively lack the one thing this team desperately needs: speed. 86 projected stolen bases is league-worst. You know what 86 stolen bases gets you in this format? A permanent L in one category and a sympathetic nod from the commissioner."
+      "blurb": "Week 1 result: W 12-2-2 vs Caminero Crush. Twelve. Categories. To. Two. The most dominant performance of the opening week by a country mile. Vlad Jr. hit .318 with 10 homers and 27 RBI across the matchup — an OBP of .441 that made Caminero Crush's pitching staff look like a batting practice machine. Chris Sale, Kirby, and Woo combined for a 2.36 ERA with a 0.98 WHIP and nearly four strikeouts for every walk. This team won literally every category except W and K, and it wasn't close in any of them. The long-term projection still shows a team with speed issues (86 SB, worst in the league) and a run-production ceiling that won't scare top offenses. But right now? This is the team nobody wants to play. Sale looks like vintage Sale, the K/BB ratio (3.92 in Week 1, 4.22 projected) is a weapon, and Arraez is going to hit .310 in his sleep. Week 1 was a masterclass."
     },
     {
-      "rank": 8,
+      "rank": 2,
+      "prev_rank": 8,
+      "delta": 6,
+      "team_id": 5,
+      "team_name": "CLAUDE 4 COMMISH",
+      "matchup_record": "7-2-2",
+      "cat_record": "96-58-22",
+      "win_pct": 0.727,
+      "strengths": [
+        "SB",
+        "R",
+        "HR"
+      ],
+      "weaknesses": [
+        "SV+H",
+        "W",
+        "K/BB"
+      ],
+      "team_totals": {
+        "era": 3.82,
+        "rbi": 718.5,
+        "whip": 1.21,
+        "sb": 172.3,
+        "hr": 240.8,
+        "avg": 0.261,
+        "kbb": 3.09,
+        "w": 52.8,
+        "r": 814.6,
+        "obp": 0.347,
+        "qs": 60.1,
+        "svh": 1.2,
+        "slg": 0.465,
+        "k": 860.3
+      },
+      "blurb": "Week 1 result: W 10-3-3 vs PO' BOYD SANDWICH. Ten categories won. A 3.02 ERA. An OBP of .385 that had PO' BOYD's pitchers questioning their career choices. Ohtani, Acuña, Tatis, and Elly De La Cruz combined for 6 homers and the kind of stat line that makes projection systems blush. Cole and Glasnow showed up on the mound with a 3.50 K/BB that anchored the pitching side too. This team dominated both sides of the ball in Week 1, which was NOT supposed to happen — the pre-season projections had this as a coin flip. The SV+H situation remains a crisis (zero saves-plus-holds in Week 1, 1.2 projected for the season — that is literally nothing), and PO' BOYD did manage to steal the WHIP and SV+H categories. But everything else? Blowout. Wait...wait...wait...wait — this team won the ERA category with a bullpen that consists of prayers and Payton Tolle? That's not sustainable. But it happened. And right now, momentum is a real thing."
+    },
+    {
+      "rank": 3,
+      "prev_rank": 1,
+      "delta": -2,
+      "team_id": 8,
+      "team_name": "Universal Basic Civale",
+      "matchup_record": "11-0-0",
+      "cat_record": "116-37-23",
+      "win_pct": 1.0,
+      "strengths": [
+        "HR",
+        "R",
+        "OBP"
+      ],
+      "weaknesses": [
+        "QS",
+        "W",
+        "K"
+      ],
+      "team_totals": {
+        "era": 3.29,
+        "rbi": 920.1,
+        "whip": 1.14,
+        "sb": 99.2,
+        "hr": 301.3,
+        "avg": 0.265,
+        "kbb": 3.81,
+        "w": 52.0,
+        "r": 952.4,
+        "obp": 0.359,
+        "qs": 39.2,
+        "svh": 153.1,
+        "slg": 0.477,
+        "k": 931.5
+      },
+      "blurb": "Week 1 result: L 6-7-3 vs Duran Duran. The pre-season number one team, the 11-0 projected juggernaut, the team that was supposed to beat EVERY SINGLE TEAM in the league... lost its very first matchup. An 8.03 ERA. A 1.70 WHIP. From the team that was projected to post a 3.30 ERA. Crochet and Webb apparently forgot how to pitch for one week, and Duran Duran's bullpen (Díaz, Duran, Jansen, Estévez) just picked them apart on the pitching side while JRam and company out-RBI'd them. The hitting was still fine — .225 AVG, .327 OBP, Judge and Soto did their thing — but when your pitching posts an 8.03 ERA, you're not winning pitching categories against anyone. Here's the thing though: the long-term projections STILL have this as the best roster in the league. Judge and Soto are still going to hit 90+ combined homers. The reliever strategy still works in theory. This was one bad week of small-sample pitching variance. Drop from 1 to 3 is a reality check, not a funeral. But it IS a reality check."
+    },
+    {
+      "rank": 4,
+      "prev_rank": 2,
+      "delta": -2,
+      "team_id": 7,
+      "team_name": "Young and Yandy Indiana Drift",
+      "matchup_record": "8-1-2",
+      "cat_record": "105-49-22",
+      "win_pct": 0.818,
+      "strengths": [
+        "R",
+        "RBI",
+        "AVG"
+      ],
+      "weaknesses": [
+        "QS",
+        "W",
+        "K"
+      ],
+      "team_totals": {
+        "era": 3.68,
+        "rbi": 846.3,
+        "whip": 1.155,
+        "sb": 131.8,
+        "hr": 245.6,
+        "avg": 0.265,
+        "kbb": 3.83,
+        "w": 58.2,
+        "r": 897.1,
+        "obp": 0.34,
+        "qs": 56.3,
+        "svh": 93.4,
+        "slg": 0.448,
+        "k": 955.2
+      },
+      "blurb": "Week 1 result: W 7-5-4 vs Nine Spoons One Brûlée. A solid, workmanlike win powered by a .279 team AVG and a .380 OBP that made Nine Spoons' pitching staff look significantly less elite than advertised. Bobby Witt Jr. and Lindor set the table, and the offense outscored Nine Spoons 22-20 in runs and 21-18 in RBI. The pitching wasn't spectacular (4.50 ERA, 1.50 WHIP) but it didn't need to be — the bats carried. The SV+H edge (4-0) was a quiet dagger. This is still the most balanced roster in the league: deep lineup, Wheeler-Gilbert rotation, and enough bullpen to compete everywhere. The 7-5-4 win doesn't scream dominance, but it screams consistency, and in a 25-week season, consistency is how you make the playoffs. Drops two spots only because Señor Burns and CLAUDE 4 COMMISH had monster weeks."
+    },
+    {
+      "rank": 5,
+      "prev_rank": 7,
+      "delta": 2,
+      "team_id": 6,
+      "team_name": "Balls to the Wall",
+      "matchup_record": "9-1-1",
+      "cat_record": "110-44-22",
+      "win_pct": 0.864,
+      "strengths": [
+        "K",
+        "QS",
+        "ERA"
+      ],
+      "weaknesses": [
+        "SB",
+        "AVG",
+        "OBP"
+      ],
+      "team_totals": {
+        "era": 3.38,
+        "rbi": 828.4,
+        "whip": 1.12,
+        "sb": 105.6,
+        "hr": 264.2,
+        "avg": 0.262,
+        "kbb": 3.65,
+        "w": 76.1,
+        "r": 853.7,
+        "obp": 0.341,
+        "qs": 82.3,
+        "svh": 68.4,
+        "slg": 0.472,
+        "k": 1305.8
+      },
+      "blurb": "Week 1 result: L 6-8-2 vs Camp of the New Orleans Saints. Lost the matchup but posted a 2.18 ERA and a 0.91 WHIP, which are numbers that belong in a museum, not a losing effort. The pitching was absolutely filthy — Strider, Hunter Greene, and the boys just mowed people down — but the offense hit .224 with a .300 OBP, which is the batting equivalent of bringing a spork to a steakhouse. Camp of the New Orleans Saints hit .295 against them and that was the ballgame. Here's what matters going forward: if this team's bats wake up even slightly — and with Devers, Machado, Bregman, and Riley Greene in the lineup, they should — the pitching is already elite enough to carry them into the top three. 1,305 projected strikeouts. A 2.18 ERA in Week 1. This roster has the highest ceiling in the league outside of Universal Basic Civale. The Week 1 loss was an offensive aberration. The pitching is very, very real."
+    },
+    {
+      "rank": 6,
       "prev_rank": 4,
-      "delta": -4,
+      "delta": -2,
       "team_id": 3,
-      "team_name": "Kings of Castillo and Leon",
+      "team_name": "Camp of the New Orleans Saints",
       "matchup_record": "5-4-2",
       "cat_record": "79-75-22",
       "win_pct": 0.545,
@@ -294,49 +220,12 @@
         "slg": 0.461,
         "k": 955.7
       },
-      "blurb": "Week 1 result: W 8-5 vs Implicitly Explicit. Kyle Tucker hit .380 with three home runs and reminded everyone he's a top-ten fantasy asset when healthy. Seager added two bombs of his own. Jackson Holliday looked good in his first week, which is either a sign of things to come or a small sample size mirage — we'll know in a month. The win over Implicitly Explicit looks great on paper until you remember that Implicitly Explicit had roughly half their roster benched. Wait...wait...wait...wait — 0.6 saves plus holds? For the SEASON? That's not a number, that's a rounding error. This team is actively conceding the SV+H category every single week, which means they start every matchup down 0-1 before a pitch is thrown. Tucker and Seager can carry a lot, and Gausman-Castillo is a solid 1-2, but the total absence of a bullpen is a structural deficiency that no amount of Kyle Tucker heroics can overcome. The drop from 4 to 8 reflects the reality that other managers woke up and started setting their lineups. Kings were always good. They're just not as relatively good anymore."
+      "blurb": "Week 1 result: W 8-6-2 vs Balls to the Wall. A .295 team batting average. A .361 OBP. Tucker and Seager absolutely feasted, and this team won every single hitting category except HR and SB. That's the good news. The bad news is the pitching posted a 5.70 ERA and a 1.34 WHIP, and the only reason they won 8 categories is because the bats were so scorching hot they covered for the mound's sins. Also — and I cannot stress this enough — 0.6 projected saves-plus-holds for the entire season. Zero in Week 1. That's not a weakness, that's a surrender. Every single week this team starts 0-1 in SV+H before anyone throws a pitch. Tucker is a top-5 fantasy bat and Seager is a machine, but the complete absence of a bullpen caps this team's ceiling at 'good, not great.' Unless they make a trade for relievers, this is a 6th-place team with 4th-place bats."
     },
     {
-      "rank": 9,
-      "prev_rank": 9,
-      "delta": 0,
-      "team_id": 4,
-      "team_name": "PO' BOYD SANDWICH",
-      "matchup_record": "4-5-2",
-      "cat_record": "74-80-22",
-      "win_pct": 0.455,
-      "strengths": [
-        "W",
-        "QS",
-        "K"
-      ],
-      "weaknesses": [
-        "HR",
-        "R",
-        "OBP"
-      ],
-      "team_totals": {
-        "era": 3.62,
-        "rbi": 668.5,
-        "whip": 1.18,
-        "sb": 134.8,
-        "hr": 197.4,
-        "avg": 0.256,
-        "kbb": 3.15,
-        "w": 78.6,
-        "r": 674.3,
-        "obp": 0.33,
-        "qs": 78.2,
-        "svh": 66.4,
-        "slg": 0.442,
-        "k": 1128.9
-      },
-      "blurb": "Week 1 result: L 5-9 vs CLAUDE 4 COMMISH. Lost because half the pitching staff was still on the bench watching from the dugout like tourists at a baseball game. If — and this is doing a LOT of heavy lifting — if this team actually starts Max Fried, Kyle Bradish, Michael King, Carlos Rodón, and Freddy Peralta, the pitching becomes one of the deepest rotations in the league. 78 wins projected, 78 quality starts, 1,128 strikeouts. That's legitimate. Yordan Alvarez is going to hit 35 home runs whether you pay attention or not, and Schwarber will either walk or hit a ball 450 feet with no in-between. CJ Abrams brings speed. The lineup isn't pretty beyond those three, but it's functional. The question that haunts this franchise like a ghost in a deli: will the manager actually activate the starting pitchers? Because if they do, this team jumps three spots. If they don't, this team stays at 9 and becomes the most frustrating 'what if' in the league. Set the lineup. Please. Vinny didn't make all those sandwiches for this."
-    },
-    {
-      "rank": 10,
+      "rank": 7,
       "prev_rank": 10,
-      "delta": 0,
+      "delta": 3,
       "team_id": 9,
       "team_name": "Duran Duran",
       "matchup_record": "2-7-2",
@@ -368,49 +257,12 @@
         "slg": 0.441,
         "k": 733.5
       },
-      "blurb": "Week 1 result: L 3-11 vs Universal Basic Civale. Got absolutely steamrolled, which, to be fair, is what happens when you draw the best team in the league in Week 1. JRam still did JRam things — 2 homers, a steal, 7 RBI — because José Ramírez does not care about your matchup projections. Mookie had a slow start (1-for-14 to open the week) which is the kind of thing that feels catastrophic in a 5-day scoring period but means literally nothing long-term. Jarren Duran stole two bases and scored four runs because that's just what he does now. The real issue isn't the offense. The real issue is that Gavin Williams, Trevor Rogers, and Cade Horton are your top three starting pitchers and that sentence should probably come with a surgeon general's warning. 27 quality starts projected. For the year. That's roughly one quality start every two weeks, which is technically a quality start pace but only in the way that seeing a dentist once every six years is technically a dental plan. The bullpen (Díaz, Duran, Jansen, Estévez) is disgusting and the SV+H total (170) is the best in the league. But you can't save games your starters never give you a lead in."
+      "blurb": "Week 1 result: W 7-6-3 vs Universal Basic Civale. Beat. The. Number. One. Team. In. The. League. Week one. First matchup of the season. Duran Duran took down the pre-season juggernaut by winning 7 categories including RBI, SB, K, ERA, WHIP, QS, AND SV+H. JRam drove in 16 and the bullpen quartet of Díaz, Duran, Jansen, and Estévez held down a 5.57 ERA that was somehow elite compared to UBC's 8.03 disaster. Wait...wait...wait...wait — Duran Duran posted 41 strikeouts to UBC's 19? From a team with 27 projected quality starts for the whole year? That's not sustainable but it IS hilarious. The long-term projections still say this is a bottom-half team because the starting pitching (Williams, Rogers, Horton) is objectively thin and the 2.83 K/BB ratio will regress. But for one glorious week, the bullpen-and-bats strategy worked to perfection. Enjoy it. Frame it. Tell your grandchildren."
     },
     {
-      "rank": 11,
-      "prev_rank": 11,
-      "delta": 0,
-      "team_id": 2,
-      "team_name": "Boydz n the Hood",
-      "matchup_record": "1-8-2",
-      "cat_record": "53-101-22",
-      "win_pct": 0.182,
-      "strengths": [
-        "ERA",
-        "K/BB",
-        "WHIP"
-      ],
-      "weaknesses": [
-        "SV+H",
-        "SB",
-        "R"
-      ],
-      "team_totals": {
-        "era": 3.60,
-        "rbi": 700.2,
-        "whip": 1.158,
-        "sb": 96.3,
-        "hr": 216.4,
-        "avg": 0.25,
-        "kbb": 3.67,
-        "w": 55.8,
-        "r": 654.8,
-        "obp": 0.322,
-        "qs": 64.5,
-        "svh": 1.6,
-        "slg": 0.446,
-        "k": 910.8
-      },
-      "blurb": "Week 1 result: L 4-10 vs Señor Burns. Tarik Skubal struck out 9 in his opening start and looked like the reigning Cy Young winner he is. Unfortunately, Skubal can't also play first base, shortstop, and all three outfield positions, which is what this roster needs him to do. Julio Rodríguez opened the season 5-for-19 with a homer and a steal, and Oneil Cruz launched one 460 feet because that's his thing, but the supporting cast is asking a lot of the word 'supporting.' Willy Adames is solid. Ozzie Albies is solid. After that you're into Spencer Torkelson territory and I will simply say no more about that. Corbin Burnes on the IL is the ghost haunting this franchise — if he comes back healthy, the pitching goes from 'one ace and some guys' to 'two aces and some guys,' which is a meaningful upgrade. The prospect pipeline (Max Clark, Sebastian Walcott, JJ Wetherholt) is genuinely exciting for 2027. But this is 2026, and in 2026 this team is rebuilding whether it admits it or not."
-    },
-    {
-      "rank": 12,
+      "rank": 8,
       "prev_rank": 12,
-      "delta": 0,
+      "delta": 4,
       "team_id": 12,
       "team_name": "ShawSwank Redemption",
       "matchup_record": "0-11-0",
@@ -442,10 +294,158 @@
         "slg": 0.41,
         "k": 1090.7
       },
-      "blurb": "Week 1 result: L 4-10 vs Moo Moo Cowsers. Lawrence Butler hit a homer on Opening Day and for about forty-five minutes this team had hope. Then Yamamoto threw seven innings of one-hit ball against them and hope went back to wherever hope goes when it visits ShawSwank — which is briefly and out of pity. The big questions entering the season were: Can Brandon Woodruff pitch? Can Robbie Ray pitch? Can Sandy Alcantara pitch? The answers after Week 1 appear to be: kind of, not really, and we'll get back to you. Hunter Brown was actually the best pitcher on the staff, which is either good news for Hunter Brown or terrible news for the staff. Matt Shaw and Pete Crow-Armstrong bring youth and energy, Helsley and Hoffman anchor the bullpen, and Zac Gallen is a legitimate arm when healthy. But 'when healthy' is doing the heavy lifting for this entire roster. Wait...wait...wait...wait — is that Walker Jenkins in the NA slot? And Josue De Paula? OK so this is a 2027 team cosplaying as a 2026 team. The redemption arc is real, it's just not happening this season. Jordan Lawlar and Kyle Teel on the bench are the future. The present is 0-11 against the field and a long, character-building summer."
+      "blurb": "Week 1 result: W 8-5-3 vs The Polar Express. The 0-11 projected team. The roster that was supposed to show up with a pool noodle. Won its first matchup. Beat a team that was projected 5 spots higher. Posted a 3.58 ERA and racked up 53 strikeouts to The Polar Express's 35. Hunter Brown was the best pitcher on the field. Ryan Helsley collected saves. The bats hit .235, which isn't sexy, but it was better than The Polar Express's .215, and sometimes fantasy baseball is just about being less bad than the other guy. The projections still hate this team — 0-11 against the field, the Woodruff/Ray/Alcantara injury trifecta looms over everything — but the kid showed up to the sword fight with the pool noodle and somehow won the duel. Zac Gallen is a real arm, Helsley and Hoffman anchor the pen, and the prospect stash (Walker Jenkins, Jordan Lawlar, Kyle Teel) means the future is bright even if the present is shaky. Jumped four spots on the strength of one genuinely encouraging week."
+    },
+    {
+      "rank": 9,
+      "prev_rank": 5,
+      "delta": -4,
+      "team_id": 1,
+      "team_name": "Nine Spoons One Brûlée",
+      "matchup_record": "5-3-3",
+      "cat_record": "86-68-22",
+      "win_pct": 0.591,
+      "strengths": [
+        "QS",
+        "K",
+        "W"
+      ],
+      "weaknesses": [
+        "SV+H",
+        "RBI",
+        "R"
+      ],
+      "team_totals": {
+        "era": 3.44,
+        "rbi": 643.8,
+        "whip": 1.138,
+        "sb": 120.7,
+        "hr": 201.4,
+        "avg": 0.257,
+        "kbb": 3.56,
+        "w": 67.4,
+        "r": 661.5,
+        "obp": 0.334,
+        "qs": 77.8,
+        "svh": 34.2,
+        "slg": 0.459,
+        "k": 1138.4
+      },
+      "blurb": "Week 1 result: L 5-7-4 vs Young and Yandy Indiana Drift. The pitching that was supposed to dominate — Skenes, Ohtani (P), Ragans — posted a 5.59 ERA. Against a team that hit .279 with a .380 OBP, you need your pitching to show up, and it simply didn't. The offense managed a .206 batting average, which is the kind of number that makes you wonder if the bats were delivered to the wrong stadium. Gunnar Henderson did Gunnar Henderson things but the supporting cast (Goodman, Soderstrom, Marsee, Rafaela) combined for the kind of stat line you'd expect from a Tuesday night beer league. Zero saves-plus-holds. Zero wins on the mound. The long-term projections still like the pitching (1,138 K, 3.44 ERA projected) and Henderson is a franchise cornerstone, but the 643 projected RBI is a structural problem no amount of strikeouts can fix. This team drops four spots because the Week 1 performance confirmed the pre-season fear: the offense is genuinely bad."
+    },
+    {
+      "rank": 10,
+      "prev_rank": 3,
+      "delta": -7,
+      "team_id": 10,
+      "team_name": "The Polar Express",
+      "matchup_record": "7-2-2",
+      "cat_record": "92-62-22",
+      "win_pct": 0.727,
+      "strengths": [
+        "SV+H",
+        "W",
+        "QS"
+      ],
+      "weaknesses": [
+        "SB",
+        "OBP",
+        "R"
+      ],
+      "team_totals": {
+        "era": 3.50,
+        "rbi": 735.6,
+        "whip": 1.152,
+        "sb": 102.8,
+        "hr": 237.1,
+        "avg": 0.255,
+        "kbb": 3.50,
+        "w": 71.2,
+        "r": 718.4,
+        "obp": 0.32,
+        "qs": 71.4,
+        "svh": 96.2,
+        "slg": 0.456,
+        "k": 1079.3
+      },
+      "blurb": "Week 1 result: L 5-8-3 vs ShawSwank Redemption. Lost to the last-place projected team. Hit .215 with a .279 OBP. Posted a 5.88 ERA. Yamamoto, Valdez, and Eovaldi combined for the kind of stat line that makes you want to check if the projections were generated by a random number generator. The offense scored 15 runs and hit 3 homers, which would be respectable for a three-day work week but is underwhelming for a full fantasy week. Hader and Devin Williams won the K/BB category (3.89) but that was about the only bright spot. The biggest drop in the rankings this week — from 3 to 10 — reflects both the ugly Week 1 AND the fact that several teams above them had monster performances. The long-term projections (71 W, 71 QS, 96 SV+H, Yamamoto-Valdez-Eovaldi rotation) still suggest this is a top-half team. But right now they look like a team that got off the train at the wrong stop."
+    },
+    {
+      "rank": 11,
+      "prev_rank": 9,
+      "delta": -2,
+      "team_id": 4,
+      "team_name": "PO' BOYD SANDWICH",
+      "matchup_record": "4-5-2",
+      "cat_record": "74-80-22",
+      "win_pct": 0.455,
+      "strengths": [
+        "W",
+        "QS",
+        "K"
+      ],
+      "weaknesses": [
+        "HR",
+        "R",
+        "OBP"
+      ],
+      "team_totals": {
+        "era": 3.62,
+        "rbi": 668.5,
+        "whip": 1.18,
+        "sb": 134.8,
+        "hr": 197.4,
+        "avg": 0.256,
+        "kbb": 3.15,
+        "w": 78.6,
+        "r": 674.3,
+        "obp": 0.33,
+        "qs": 78.2,
+        "svh": 66.4,
+        "slg": 0.442,
+        "k": 1128.9
+      },
+      "blurb": "Week 1 result: L 3-10-3 vs CLAUDE 4 COMMISH. Got demolished. A .198 batting average. A .305 OBP. Three homers for the entire week. The offense looked like it was assembled from the clearance rack at a fantasy baseball yard sale — which, to be fair, it kind of was. Alvarez and Schwarber are elite bats but the surrounding cast (Ben Rice, Addison Barger, Luke Keaschall) is the kind of lineup that makes you squint at the screen and say 'wait, really?' The one bright spot was a 1.09 WHIP from the pitching staff, but even that wasn't enough because the bats produced literally nothing. The SP depth (Fried, Bradish, King, Rodón, Peralta — many still on the bench) remains the single most valuable untapped resource in the league. If those arms get activated, the pitching projections (78 W, 78 QS, 1,128 K) are legitimately elite. But the offense needs help. Desperately."
+    },
+    {
+      "rank": 12,
+      "prev_rank": 11,
+      "delta": -1,
+      "team_id": 2,
+      "team_name": "Caminero Crush",
+      "matchup_record": "1-8-2",
+      "cat_record": "53-101-22",
+      "win_pct": 0.182,
+      "strengths": [
+        "ERA",
+        "K/BB",
+        "WHIP"
+      ],
+      "weaknesses": [
+        "SV+H",
+        "SB",
+        "R"
+      ],
+      "team_totals": {
+        "era": 3.60,
+        "rbi": 700.2,
+        "whip": 1.158,
+        "sb": 96.3,
+        "hr": 216.4,
+        "avg": 0.25,
+        "kbb": 3.67,
+        "w": 55.8,
+        "r": 654.8,
+        "obp": 0.322,
+        "qs": 64.5,
+        "svh": 1.6,
+        "slg": 0.446,
+        "k": 910.8
+      },
+      "blurb": "Week 1 result: L 2-12-2 vs Señor Burns. Two categories won. Out of sixteen. Against a team that hit .318 with a .441 OBP and 27 RBI. Señor Burns treated this matchup like batting practice and Caminero Crush was the ball. The pitching was actually decent — a 2.36 ERA, a 1.01 WHIP, Skubal looked like the reigning Cy Young — but it didn't matter because the offense hit .240 and produced 17 RBI to Señor Burns's 27. Julio Rodríguez and Oneil Cruz have the talent to carry a lineup, but the supporting cast (Torkelson, Okamoto, Baldwin) needs several miracles to be league-average. Corbin Burnes on the IL is the ghost in the machine — when he returns, this team's pitching goes from 'Skubal and hope' to 'Skubal, Burnes, and hope,' which is a meaningful upgrade. But right now, this is the cellar. The name changed from Boydz n the Hood to Caminero Crush, which is the fantasy equivalent of rearranging deck chairs on the Titanic."
     }
   ],
   "week": 2,
   "week_label": "Week 2 (Mar 30 - Apr 5)",
-  "generated_at": "2026-03-30T10:00:00.000000+00:00"
+  "generated_at": "2026-03-30T14:00:00.000000+00:00"
 }
