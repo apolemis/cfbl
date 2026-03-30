@@ -208,6 +208,12 @@ body {
     color: #00BFFF;
     text-shadow: 1px 1px 0px #000;
 }
+.rank-meta {
+    font-size: 11px;
+    color: #aaa;
+    margin-top: 2px;
+    font-family: monospace;
+}
 
 .rank-record {
     font-size: 12px;

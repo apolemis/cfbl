@@ -41,7 +41,11 @@
     <div id="tab-rankings" class="tab-content active">
         {% if rankings and rankings.rankings %}
         <h2 class="section-header">&#127942; CFBL POWER RANKINGS &mdash; {{ rankings.week_label|upper }} &#127942;</h2>
+        {% if rankings.methodology %}
+        <p class="section-subheader">{{ rankings.methodology }}</p>
+        {% elif rankings.generated_at %}
         <p class="section-subheader">Last updated: {{ rankings.generated_at[:10] }} | Simulation-based: every team vs every team, 14 active categories</p>
+        {% endif %}
 
         {% for team in rankings.rankings %}
         <div class="ranking-card">
@@ -60,6 +64,11 @@
                 </div>
                 <div class="rank-team-info">
                     <div class="rank-team-name">{{ team.team_name }}</div>
+                    {% if team.season_record %}
+                    <div class="rank-meta">
+                        Record: {{ team.season_record }} | Preseason: #{{ team.preseason_rank }} | Roto: #{{ team.roto_rank }} | Blend: {{ "%.2f"|format(team.blend_score) }}
+                    </div>
+                    {% endif %}
                     <div class="rank-badges">
                         {% if team.strengths %}
                             {% for s in team.strengths %}
