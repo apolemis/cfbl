@@ -69,12 +69,15 @@ async def index(request: Request):
     rankings = load_latest("rankings")
     matchups = load_latest("matchups")
     salary_cap = load_salary_cap()
-    return templates.TemplateResponse("base.html", {
-        "request": request,
-        "rankings": rankings,
-        "matchups": matchups,
-        "salary_cap": salary_cap,
-    })
+    return templates.TemplateResponse(
+        request=request,
+        name="base.html",
+        context={
+            "rankings": rankings,
+            "matchups": matchups,
+            "salary_cap": salary_cap,
+        },
+    )
 
 
 @app.get("/api/salary-cap")
