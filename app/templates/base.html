@@ -60,9 +60,6 @@
                 </div>
                 <div class="rank-team-info">
                     <div class="rank-team-name">{{ team.team_name }}</div>
-                    <div class="rank-record">
-                        vs Field: {{ team.matchup_record }} | Categories: {{ team.cat_record }} | Win%: {{ "%.3f"|format(team.win_pct) }}
-                    </div>
                     <div class="rank-badges">
                         {% if team.strengths %}
                             {% for s in team.strengths %}
