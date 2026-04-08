@@ -1,0 +1,96 @@
+{
+  "week_label": "Week 3 (Apr 6 - Apr 12)",
+  "lock_of_the_week": "Señor Burns (-650) over The Polar Express — Lock of da week, cher, tighter dan da lid on a Mason jar full of mawmaw's fig preserves. Burns is undefeated and rollin' downhill like a runaway pirogue, and Polar Express is da only winless team in da league. I gar-on-tee.",
+  "matchups": [
+    {
+      "team_a": {
+        "id": 8,
+        "name": "Universal Basic Civale"
+      },
+      "team_b": {
+        "id": 2,
+        "name": "Caminero Crush"
+      },
+      "predicted_score": "6-8-2",
+      "favorite": "team_b",
+      "moneyline_a": "+165",
+      "moneyline_b": "-190",
+      "blurb": "Mais cher, lemme tell you somethin' bizarre, dis matchup right here is like watchin' a thoroughbred horse pull up lame in da first turn, that's true. Universal Basic Civale supposed to be da #1 power rank team, but dey sittin' at #12 in da roto like a couillon dat showed up to da fais do-do wearin' two left boots, that's true. Dat .204 batting average? Sha, dat's worse dan tryin' to make gumbo wit' nuttin' but water and a sad lookin' onion, that's true. Dey sittin' 0-1-1 on da season and Judge and Soto playin' like dey ate too many beignets at Cafe Du Monde and now dey can't lift da bat, ooo wee. Caminero Crush, on da other hand, dey come into dis one wit' da league's best home run total (19) and a pitching staff dat's got a 2.40 ERA — sha, dat ERA is tighter dan da casing on a fresh link of boudin from Best Stop, that's true. Dey throwin' 127 K already and got 10 wins, dat's a rotation deeper dan da Atchafalaya in flood season, mon ami. UBC gon' steal SV+H 'cause dey league-best wit' 11, and maybe a category or two on talent alone, but Caminero gon' eat dey lunch in da pitching cats and out-bomb dem on da hitting side too. Yeah you right, Caminero Crush by way of file powder and a hot roux, that's true."
+    },
+    {
+      "team_a": {
+        "id": 1,
+        "name": "Nine Spoons One Brûlée"
+      },
+      "team_b": {
+        "id": 12,
+        "name": "ShawSwank Redemption"
+      },
+      "predicted_score": "5-9-2",
+      "favorite": "team_b",
+      "moneyline_a": "+220",
+      "moneyline_b": "-260",
+      "blurb": "Ooo wee, mon ami, dis one here is fixin' to be uglier dan a possum eatin' a sweet potato in da middle of da road, that's true. ShawSwank Redemption come strollin' in undefeated at 2-0 like dey just won da Mardi Gras king cake raffle three years runnin', that's true. Dey got da BEST pitching in da WHOLE league — 11 wins, 125 K, 3.22 ERA, and 9 SV+H — sha, dat staff is workin' harder dan a tante on Christmas Eve makin' six dozen meat pies for da whole parish, I gar-on-tee. Da bats a little weak (10 HR, .257 AVG) but when you pitchin' like dat you don't need much, mais oui. Nine Spoons One Brûlée, dey 1-1 on da season wit' a 3.42 ERA and 95 K of dey own — pitching ain't bad, no — but dey hittin' .218 which is colder dan a snowball in da Quarter on a January morning, that's true. Dis matchup is pitcher vs pitcher, like two old men playin' bourré at da Legion hall and neither one wantin' to throw down da first card, that's true. ShawSwank gon' edge out da pitching cats and Nine Spoons ain't got nuff bats to make up da difference. Pick: ShawSwank by way of a slow simmered étouffée, comment ça va, that's true."
+    },
+    {
+      "team_a": {
+        "id": 3,
+        "name": "Camp of the New Orleans Saints"
+      },
+      "team_b": {
+        "id": 5,
+        "name": "CLAUDE 4 COMMISH"
+      },
+      "predicted_score": "9-5-2",
+      "favorite": "team_a",
+      "moneyline_a": "-180",
+      "moneyline_b": "+155",
+      "blurb": "Mais sha, dis here is da matchup of two teams headed in opposite directions like two pirogues passin' on da bayou, one goin' upstream wit' a full ice chest and one goin' downstream wit' a hole in da bottom, that's true. Camp of da New Orleans Saints come in 1-1, hittin' .260 wit' 62 runs scored — second-most in da WHOLE league, mon ami — like dey eatin' three plates at da crawfish boil and goin' back for seconds, that's true. CLAUDE 4 COMMISH got Ohtani, Acuna, Tatis, and Elly on da roster — sha, dat's a lineup dat SHOULD be cookin' wit' grease — but dey hittin' .214 wit' only 43 runs which is da WORST in da league, ooo wee, dat's couillon-level production from a star roster, that's true. CLAUDE got 129 K's (league best) and a 3.58 K/BB so dey gon' steal some pitching cats, I gar-on-tee, but Camp got da bats AND decent enough arms (3.75 ERA average) to win da war. Camp's only real weakness is 2 SV+H which is thinner dan a po'boy from a place dat charges by da slice, that's true. But you don't need bullpen when you scorin' 9 categories, no. Camp of da New Orleans Saints by way of a heapin' plate of red beans and rice on a Monday, mais oui, that's true."
+    },
+    {
+      "team_a": {
+        "id": 4,
+        "name": "PO' BOYD SANDWICH"
+      },
+      "team_b": {
+        "id": 7,
+        "name": "Young and Yandy Indiana Drift"
+      },
+      "predicted_score": "10-4-2",
+      "favorite": "team_a",
+      "moneyline_a": "-340",
+      "moneyline_b": "+275",
+      "blurb": "WOOO DOGGY, cher, lemme tell you 'bout PO' BOYD SANDWICH, 'cause dis team is da BIGGEST surprise in da league and I ain't talkin' 'bout a little bit, no, I'm talkin' 'bout a surprise bigger dan findin' a whole soft-shell crab in ya gumbo when you only paid for a cup, that's true. Boyd sittin' at ROTO #2 IN DA WHOLE LEAGUE, mon ami, wit' 17 HR, 58 RBI (BEST in da league), 9 SB, .258/.370/.452 hitting AND a pitching staff goin' 5 W, 123 K, 3.23 ERA, 1.06 WHIP — sha, dat's a complete team like a gumbo wit' chicken AND andouille AND okra AND a fat roux, that's true. Now dey fixin' to face Young and Yandy Indiana Drift, who got decent bats (16 HR, 57 RBI, .258 AVG, 59 R) but a pitching staff dat's a straight-up DISASTER — 6.86 ERA, 1.78 WHIP, 2 wins, 62 K, ZERO QS — ooo wee, dat ain't pitching, dat's just throwin' grease on a fire, that's true. Da Drift bullpen got 8 SV+H so dey gon' steal dat one but everywhere else PO' BOYD gon' make groceries on dem like it's da last day of crawfish season. Yandy gon' need a miracle bigger dan da Pope blessin' da Saints sideline. PO' BOYD by way of a fully-dressed shrimp po'boy wit' extra mayo, I gar-on-tee, that's true."
+    },
+    {
+      "team_a": {
+        "id": 6,
+        "name": "Balls to the Wall"
+      },
+      "team_b": {
+        "id": 9,
+        "name": "Duran Duran"
+      },
+      "predicted_score": "8-6-2",
+      "favorite": "team_a",
+      "moneyline_a": "-145",
+      "moneyline_b": "+125",
+      "blurb": "Mais oui, dis matchup right here is like two ol' boys arguin' at da bait shop 'bout whose pirogue is faster — neither one is winnin' a race but one of dem at least got a workin' motor, that's true. Balls to the Wall come in 0-1-1, mediocre across da WHOLE board like a po'boy from a gas station — it'll fill ya up but you ain't gon' write home 'bout it, that's true. Dey got 49 R, 13 HR, .249 AVG, 4.22 ERA, 1.21 WHIP, but dey lead da league in K/BB at 3.41 which is 'bout da only thing keepin' dem from sinkin' down da bayou, mon ami. Duran Duran 1-1 and dey LEAD DA LEAGUE in stolen bases wit' 11 — sha, dey runnin' 'round da bases like dey heard da zydeco band started playin' down at Mulate's, that's true. But Duran's bats? Cher, dey hittin' .196 (WORST in da league) wit' 7 HR (ALSO worst), dat's a lineup so cold you could chill ya Abita on it, that's true. Da pitching is surprisingly tasso-level good though — 7 W, 113 K, 3.64 ERA, 8 QS, 9 SV+H — yeah you right, dat staff is cookin'. Balls to da Wall got da edge in raw category count 'cause Duran can only contribute SB, ERA, and SV+H reliably. Pick: Balls to da Wall by way of a thin lagniappe, c'est bon, that's true."
+    },
+    {
+      "team_a": {
+        "id": 10,
+        "name": "The Polar Express"
+      },
+      "team_b": {
+        "id": 11,
+        "name": "Señor Burns"
+      },
+      "predicted_score": "2-12-2",
+      "favorite": "team_b",
+      "moneyline_a": "+550",
+      "moneyline_b": "-650",
+      "blurb": "OOO WEEEEE, mon ami, save ya money on dis one and go buy ya tante some boudin instead 'cause dis matchup is OVER before it even started, that's true. Señor Burns is sittin' at ROTO #1 OVERALL in da entire league and dey 2-0 undefeated comin' in like a Category 5 hurricane rollin' up from da Gulf, that's true. Sha, lemme list it for you — 64 R (BEST), 14 HR, 54 RBI, .287 AVG, .381 OBP, .452 SLG, 7 W, 118 K, 3.10 ERA, 1.13 WHIP, 9 QS, 7 SV+H — dat ain't a fantasy team dat's a five-course meal at Commander's Palace wit' bread pudding for dessert AND a turtle soup, that's true. Burns is dominant in EVERYTHING like a tante dat won da blue ribbon at da gumbo cookoff fifteen years runnin', I gar-on-tee. Da Polar Express is da ONLY winless team at 0-2 wit' a 5.12 ERA, 1.43 WHIP, 11 HR, 47 R, .228 AVG — couillon, dat's worst-or-near-worst in basically EVERY category, that's true. Polar Express might steal a stat by accident, like findin' a quarter under da couch cushion at da fais do-do, but dis is a 12-2 type beatdown. Lock of da week, cher, dis is da easiest pick since pickin' Tabasco at da grocery, that's true. Señor Burns by way of a full Cajun feast and den some, mais oui, that's true."
+    }
+  ]
+}
