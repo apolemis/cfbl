@@ -156,6 +156,45 @@ body {
 }
 
 /* ================================
+   METHODOLOGY BOX
+   ================================ */
+
+.methodology-box {
+    background: #000033;
+    border: 2px solid #FFD700;
+    margin: 0 0 16px 0;
+    padding: 0;
+}
+
+.methodology-header {
+    background: linear-gradient(180deg, #1a0a00 0%, #000033 100%);
+    color: #FFD700;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 6px 12px;
+    border-bottom: 1px solid #FFD700;
+    font-family: 'Georgia', serif;
+    letter-spacing: 1px;
+}
+
+.methodology-text {
+    padding: 12px 16px;
+    color: #CCCCCC;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.methodology-weights {
+    padding: 4px 16px 10px;
+    color: #00BFFF;
+    font-size: 11px;
+    font-family: monospace;
+    text-align: center;
+    border-top: 1px dashed #333366;
+}
+
+/* ================================
    POWER RANKINGS
    ================================ */
 

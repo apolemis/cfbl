@@ -41,7 +41,15 @@
     <div id="tab-rankings" class="tab-content active">
         {% if rankings and rankings.rankings %}
         <h2 class="section-header">&#127942; CFBL POWER RANKINGS &mdash; {{ rankings.week_label|upper }} &#127942;</h2>
-        {% if rankings.methodology %}
+        {% if rankings.methodology_long %}
+        <div class="methodology-box">
+            <div class="methodology-header">&#9881; HOW THE BOT RANKS &#9881;</div>
+            <div class="methodology-text">{{ rankings.methodology_long }}</div>
+            {% if rankings.methodology_weights %}
+            <div class="methodology-weights">{{ rankings.methodology_weights }}</div>
+            {% endif %}
+        </div>
+        {% elif rankings.methodology %}
         <p class="section-subheader">{{ rankings.methodology }}</p>
         {% elif rankings.generated_at %}
         <p class="section-subheader">Last updated: {{ rankings.generated_at[:10] }} | Simulation-based: every team vs every team, 14 active categories</p>
@@ -66,7 +74,7 @@
                     <div class="rank-team-name">{{ team.team_name }}</div>
                     {% if team.season_record %}
                     <div class="rank-meta">
-                        Record: {{ team.season_record }} ({{ team.cat_record }}) | Preseason: #{{ team.preseason_rank }} | Roto: #{{ team.roto_rank }} | Blend: {{ "%.2f"|format(team.blend_score) }}
+                        Record: {{ team.season_record }} ({{ team.cat_record }}){% if team.power_score is defined %} | Power: {{ team.power_score }} | Heat: {{ "%+.0f"|format(team.heat_score) }}{% elif team.blend_score is defined %} | Preseason: #{{ team.preseason_rank }} | Roto: #{{ team.roto_rank }} | Blend: {{ "%.2f"|format(team.blend_score) }}{% endif %}
                     </div>
                     {% endif %}
                     <div class="rank-badges">
