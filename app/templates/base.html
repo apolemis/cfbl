@@ -74,7 +74,7 @@
                     <div class="rank-team-name">{{ team.team_name }}</div>
                     {% if team.season_record %}
                     <div class="rank-meta">
-                        Record: {{ team.season_record }} ({{ team.cat_record }}){% if team.power_score is defined %} | Power: {{ team.power_score }} | Heat: {{ "%+.0f"|format(team.heat_score) }}{% elif team.blend_score is defined %} | Preseason: #{{ team.preseason_rank }} | Roto: #{{ team.roto_rank }} | Blend: {{ "%.2f"|format(team.blend_score) }}{% endif %}
+                        Record: {{ team.season_record }} ({{ team.cat_record }}){% if team.power_score is defined %} | Power: {{ team.power_score }}{% if team.heat_score is defined %} | Heat: {{ "%+.0f"|format(team.heat_score) }}{% endif %}{% elif team.blend_score is defined %} | Preseason: #{{ team.preseason_rank }} | Roto: #{{ team.roto_rank }} | Blend: {{ "%.2f"|format(team.blend_score) }}{% endif %}
                     </div>
                     {% endif %}
                     <div class="rank-badges">
