@@ -1,0 +1,96 @@
+{
+  "week_label": "Week 9 (May 18 - May 24)",
+  "lock_of_the_week": "CLAUDE 4 COMMISH (-400) over Young and Yandy Indiana Drift — Lock of da week, cher, dis one is tighter dan da gate at Mulate's after closing time. CLAUDE just put up da highest power score da model has produced all year (134) and dey ranked top-3 in NINE categories. Y&Y got da bats but dey pitching is dead-last in QS, WHIP, AND ERA, mon ami. Sha, dat's a matchup where one side wins 6-7 cats automatic. I gar-on-tee, that's true.",
+  "matchups": [
+    {
+      "team_a": {
+        "id": 4,
+        "name": "PO' BOYD SANDWICH"
+      },
+      "team_b": {
+        "id": 8,
+        "name": "Universal Basic Civale"
+      },
+      "predicted_score": "6-8-0",
+      "favorite": "team_b",
+      "moneyline_a": "+135",
+      "moneyline_b": "-155",
+      "blurb": "Mais sha, dis is two top-4 power teams headed in opposite directions, like one boat pullin' up to da dock loaded down wit' fresh crawfish and da other one driftin' downstream wit' a hole in da bow, that's true. UBC is leadin' da league in FIVE categories — R, HR, RBI, OBP, AND SV+H — sha, dat's an offensive juggernaut wit' Judge and Soto and Harper and Freeman, ooo wee, I gar-on-tee. PO' BOYD leads da league in SLG and is top-2 in AVG, so dey got bats too, but dey gettin' beat by da schedule like a possum tryin' to cross 1-10 in rush hour. UBC's pitchin' is a CATASTROPHE — DEAD LAST in W, K, AND QS, sha, dat's three twelfth-place finishes. PO' BOYD's K/BB is also LAST in da league (12th). Dis comes down to whose pitching can scratch out enough wins. UBC's offense + bullpen edge probably tips da scale. Pick: UBC by a slim margin, like winnin' a domino game by da last bone, that's true."
+    },
+    {
+      "team_a": {
+        "id": 1,
+        "name": "Nine Spoons One Brûlée"
+      },
+      "team_b": {
+        "id": 2,
+        "name": "Caminero Crush"
+      },
+      "predicted_score": "9-5-0",
+      "favorite": "team_a",
+      "moneyline_a": "-220",
+      "moneyline_b": "+180",
+      "blurb": "WOOO DOGGY, cher, dis here is two strong pitching teams goin' at it but Spoons is comin' in HOT and Caminero is comin' in COLD. Spoons leads da league in K, WHIP, AND K/BB — three first-place finishes, sha, dat's elite-tier rate-stat dominance, that's true. Week 8 was 0.97 WHIP, 6 W, 5 QS — vintage Spoons. Caminero is ridin' a 6-1-1 actual record but da model says da underlying stats don't support it — dey just had a 5.12 ERA / 1.32 WHIP / 1 W week, ooo wee, dat's a hot team coolin' off in real time. Caminero's offense (top-4 in HR and K) is still legit, and dey gon' steal HR for sure. But Spoons gon' win all four pitching cats and probably split da hitting cats. Pick: Spoons by way of a slow simmered seafood gumbo wit' a dark roux, mais oui, that's true."
+    },
+    {
+      "team_a": {
+        "id": 3,
+        "name": "Camp of the New Orleans Saints"
+      },
+      "team_b": {
+        "id": 11,
+        "name": "Señor Burns"
+      },
+      "predicted_score": "5-9-0",
+      "favorite": "team_b",
+      "moneyline_a": "+220",
+      "moneyline_b": "-260",
+      "blurb": "OOO WEE, mon ami, Camp just had dey BEST week of da year in Week 8 (9 W, 92 K, .259/.375/.451, 6 QS, 10 cat wins) but now dey gotta face da team wit' da highest pitching floor in da CFBL, sha. Burns leads da league in W AND QS — TWO first-place finishes — and ranks 2nd in OBP and WHIP, 3rd in ERA and K/BB. Dat's a complete pitching staff, dat's true. Camp got a real offense (top-7 in R, HR, RBI) but dey bullpen is LAST in SV+H, 11th in WHIP, 11th in ERA — dat's three bottom-two finishes. Burns' weakness is SB (10th) and RBI (9th) — Camp can win SB and maybe RBI on a good day. But Burns gon' control da pitching cats and win at least 8-9. Pick: Burns by way of a long Sunday brunch at Brennan's wit' da turtle soup, that's true."
+    },
+    {
+      "team_a": {
+        "id": 5,
+        "name": "CLAUDE 4 COMMISH"
+      },
+      "team_b": {
+        "id": 7,
+        "name": "Young and Yandy Indiana Drift"
+      },
+      "predicted_score": "10-4-0",
+      "favorite": "team_a",
+      "moneyline_a": "-400",
+      "moneyline_b": "+325",
+      "blurb": "Sha, dis is da lock of da week, dat's true. CLAUDE just put up da highest power score da model has produced all season (134) — dey top-3 in NINE of fourteen categories, includin' #1 in AVG. Sha, dat's Ohtani, Acuña, Tatis, AND Elly playin' all at once like a Mardi Gras parade wit' four kings on da float, I gar-on-tee. Y&Y got a legit offense (#2 in R, top-5 in HR, RBI, AVG, OBP, SLG) — dey gon' compete on da hitting side. But da pitching is DEAD LAST in QS, 10th in ERA, 10th in WHIP, 9th in K. Dat's four bottom-tier pitching cats. CLAUDE gon' win EVERY pitching cat plus split or win da hitting cats. Pick: CLAUDE 4 COMMISH by way of a full Galatoire's lunch wit' wine, dessert, AND da check still under $200 'cause CLAUDE's dat efficient, that's true."
+    },
+    {
+      "team_a": {
+        "id": 6,
+        "name": "Balls to the Wall"
+      },
+      "team_b": {
+        "id": 12,
+        "name": "ShawSwank Redemption"
+      },
+      "predicted_score": "7-7-0",
+      "favorite": "team_b",
+      "moneyline_a": "+110",
+      "moneyline_b": "-130",
+      "blurb": "Mais cher, dis is da BATTLE OF DA PITCHING-HEAVY teams, two staffs throwin' more strikeouts dan you can shake a crawfish at, that's true. Balls is on a TWO-WEEK pitching hot streak (W7: 7 W, 2.78 ERA; W8: 5 W, 2.38 ERA, 8 QS) but da bats has been silent (.258, .245 AVG). ShawSwank just got beat by Spoons in W8 but still ranks 3rd in K, 3rd in SV+H, 3rd in SB, 3rd in W cumulatively, sha, dat's four top-3 finishes from a team rocking a 5-3 matchup record. Da problem for both is da offense — ShawSwank is LAST in HR, RBI, AND SLG. Balls is 10th in HR, 11th in SB, 11th in SV+H. Dis comes down to who gets a few bats hot. ShawSwank's matchup-record edge and slightly better offensive ranks give 'em da nod. Pick: ShawSwank by a hair, like winnin' a crawfish race by half a claw, c'est bon, that's true."
+    },
+    {
+      "team_a": {
+        "id": 9,
+        "name": "Duran Duran Duran"
+      },
+      "team_b": {
+        "id": 10,
+        "name": "The Polar Express"
+      },
+      "predicted_score": "7-7-0",
+      "favorite": "team_b",
+      "moneyline_a": "+105",
+      "moneyline_b": "-125",
+      "blurb": "Ooo wee, da BASEMENT BATTLE, cher — last place vs second-to-last place, like watchin' two pirogues argue 'bout which one has more holes in it, that's true. Duran (now Duran Duran Duran, dey added a third Duran, sha, dat's commitment) leads da league in SB but is LAST in AVG, OBP, AND SLG — three twelfth-place finishes, mon ami, dat's a roster built on speed and bullpen only. Polar is on a 7-matchup losing streak after gettin' obliterated by CLAUDE 3-11-2 last week. Polar got slightly more balanced peripherals (4th in SV+H, top-6 in HR and SLG) but dey LAST in R and SB, 11th in K and W. Dis one is a toss-up, sha. Both teams gon' lose more dan dey win. Slight edge to Polar 'cause Duran's offensive collapse is more pronounced. Pick: Polar by way of a leftover po'boy from da day before, edible but not memorable, that's true."
+    }
+  ]
+}
