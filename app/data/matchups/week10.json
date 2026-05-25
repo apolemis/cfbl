@@ -1,0 +1,96 @@
+{
+  "week_label": "Week 10 (May 25 - May 31)",
+  "lock_of_the_week": "Young and Yandy Indiana Drift (-380) over The Polar Express — Lock of da week, mon ami, save ya money for boudin instead. Y&Y is comin' off a 40 R, 7 HR, .302 AVG week and dey leadin' da league in AVG. Polar just got demolished 12-1 by Duran AND lost dey ENTIRE starting rotation (5 SPs!) to UBC in da trade. Dey runnin' on fumes wit' a patched-together pitching staff. Sha, dis one is gon' be ugly, I gar-on-tee, that's true.",
+  "matchups": [
+    {
+      "team_a": {
+        "id": 8,
+        "name": "Universal Basic Civale"
+      },
+      "team_b": {
+        "id": 11,
+        "name": "Señor Burns"
+      },
+      "predicted_score": "7-7-0",
+      "favorite": "team_b",
+      "moneyline_a": "+125",
+      "moneyline_b": "-145",
+      "blurb": "Mais sha, dis here is a HEAVYWEIGHT matchup and a FIRST LOOK at da new UBC roster, that's true. UBC just pulled off da TRADE OF DA YEAR — sent Kurtz, Painter, and five other arms to Polar, got back Alonso, Trea Turner, Altuve, AND a rotation of Yamamoto, Valdez, Suarez, Eovaldi, Sheehan, ooo wee, dat's a complete pitching overhaul. Burns is comin' off a 6-6-4 tie wit' Camp and is still da second-best power team in da league — #1 in W and QS, top-3 in OBP, WHIP, K/BB, sha, dat pitching staff is reliable like Mawmaw's gumbo on Sunday, I gar-on-tee. Dis comes down to whether UBC's new SPs can ramp up fast enough. UBC's offense (R, HR, RBI, OBP, SV+H all top-2) plus Burns' pitching depth (5 of 7 pitching cats top-5) is gon' make dis a true 7-7 split. Burns' floor is higher 'cause UBC's new rotation needs time to gel. Pick: Burns by a slim margin, like winnin' bourré by da last trick at da Legion hall, c'est bon, that's true."
+    },
+    {
+      "team_a": {
+        "id": 1,
+        "name": "Nine Spoons One Brûlée"
+      },
+      "team_b": {
+        "id": 5,
+        "name": "CLAUDE 4 COMMISH"
+      },
+      "predicted_score": "5-9-0",
+      "favorite": "team_b",
+      "moneyline_a": "+220",
+      "moneyline_b": "-260",
+      "blurb": "OOO WEE, mon ami, dis is da MARQUEE matchup of da week — two of da best pitching teams in da league throwin' down like two ol' boys arguin' over whose étouffée got more file in it, that's true. Spoons leads da league in ERA, WHIP, AND K/BB — three first-place rate cats, sha, dat's elite-tier dominance. CLAUDE is da #1 power team in da CFBL at 135 — top-3 in NINE different categories, mon ami, dat's a complete roster wit' Ohtani, Acuña, Tatis, Elly hittin', Cole, Glasnow, Snell on da mound, ooo wee. Both teams play similar styles (lean offense, dominant pitching) so dis comes down to who's hotter. CLAUDE just dropped a 9-5 win over Y&Y. Spoons just lost 6-7 to Caminero. Da edge: CLAUDE's offense is significantly better (1st in K, top-3 in R, HR, RBI, SB) while Spoons is bottom-three in HR, RBI, AVG. Pick: CLAUDE by way of a Galatoire's tasting menu, that's true."
+    },
+    {
+      "team_a": {
+        "id": 2,
+        "name": "Caminero Crush"
+      },
+      "team_b": {
+        "id": 12,
+        "name": "ShawSwank Redemption"
+      },
+      "predicted_score": "8-6-0",
+      "favorite": "team_a",
+      "moneyline_a": "-200",
+      "moneyline_b": "+165",
+      "blurb": "Cher, dis is two winnin' teams squarin' off — Caminero at 7-1-1 (best matchup record in da league) versus ShawSwank at 6-3 (third-best matchup record). Sha, dat's da hottest H2H records in da CFBL goin' head-to-head, I gar-on-tee. Caminero just beat Spoons 7-6 in a tight one and dey ranked 2nd in HR and K cumulatively, 4th in QS. ShawSwank beat Balls 7-6-3 wit' a strong pitching line — dey rank 2nd in K AND SV+H, 3rd in W, mon ami, dat's a pitching-heavy team. Da gap: Caminero's offense is much better (.263 AVG vs ShawSwank's .240 last week, plus ShawSwank is dead-LAST in HR and RBI cumulatively). Caminero gon' take all four hitting cats and split da pitching. Pick: Caminero by way of a heapin' bowl of crawfish étouffée, that's true."
+    },
+    {
+      "team_a": {
+        "id": 3,
+        "name": "Camp of the New Orleans Saints"
+      },
+      "team_b": {
+        "id": 9,
+        "name": "Duran Duran Duran"
+      },
+      "predicted_score": "7-7-0",
+      "favorite": "team_a",
+      "moneyline_a": "-115",
+      "moneyline_b": "-105",
+      "blurb": "Mais cher, dis is da matchup of two teams comin' off VERY different W9s. Camp just had dey best pitching week of da season (85.1 IP! 2.74 ERA, 4 QS, 7 SV+H) and tied Burns 6-6-4. Sha, dat Cristopher Sánchez / Castillo / Gausman rotation finally fired all at once, like a zydeco band hittin' da chorus, I gar-on-tee. Duran is comin' off DEMOLISHING Polar 12-1-3 — biggest blowout of da season, mon ami. Dey ranked 1st in SB AND 4th in RBI cumulatively now. Dis comes down to pitching vs hitting: Camp got da arms (4 SPs combined for 67 IP last week) and Duran got da bats AND da bullpen (top-3 in SB, SV+H). Camp's slight edge in da pitching cats balances Duran's hitting and SV+H lead. Pick: Camp by a nose, like winnin' a domino game by da last bone, c'est bon, that's true."
+    },
+    {
+      "team_a": {
+        "id": 4,
+        "name": "PO' BOYD SANDWICH"
+      },
+      "team_b": {
+        "id": 6,
+        "name": "Balls to the Wall"
+      },
+      "predicted_score": "8-6-0",
+      "favorite": "team_a",
+      "moneyline_a": "-175",
+      "moneyline_b": "+150",
+      "blurb": "Sha, dis is two teams stuck in da freefall, like two boats driftin' down da bayou wit' no oars, that's true. PO' BOYD just got blown out 11-3 by UBC and dey down to 2-5-2 matchup record. Balls just lost 6-7 to ShawSwank and dey 1-6-2. But PO' BOYD got more raw talent — dey lead da league in SLG, 3rd in HR and AVG, sha, da bats can do real damage when dey show up. Balls leads in nuttin' top-tier but dey strong in W (2nd), QS (3rd), ERA (3rd) — pitchin' is da only thing keepin' 'em afloat. Da issue is Balls just had da WORST SV+H week (ZERO, sha, dat's a bullpen on vacation) while PO' BOYD struggled too (2 SV+H). Dis matchup gon' come down to who's bats wake up. PO' BOYD's offensive ceiling is higher. Pick: PO' BOYD by way of a shrimp po'boy wit' extra mayo, mais oui, that's true."
+    },
+    {
+      "team_a": {
+        "id": 7,
+        "name": "Young and Yandy Indiana Drift"
+      },
+      "team_b": {
+        "id": 10,
+        "name": "The Polar Express"
+      },
+      "predicted_score": "10-4-0",
+      "favorite": "team_a",
+      "moneyline_a": "-380",
+      "moneyline_b": "+310",
+      "blurb": "WOOO DOGGY, mon ami, dis is da LOCK OF DA WEEK, save ya money for crawfish, that's true. Y&Y is ridin' da hottest offensive week of any team in W9 — .302 AVG, 81 hits, 40 R, 7 HR, 40 RBI, ooo wee, dey leadin' da league in AVG and top-5 in R, HR, RBI. Polar Express just got DEMOLISHED 12-1 by Duran in da worst single-week result of da season, AND dey lost dey entire starting rotation in da trade wit' UBC. Sha, Yamamoto, Valdez, Suarez, Eovaldi, and Sheehan are all gone to UBC, replaced by Painter, Brown, Flaherty, Civale, Montero, and May — dat's downgradin' a Ferrari for five lawn mowers, I gar-on-tee, that's true. Polar got SOME hope wit' Kurtz comin' over (he's a top-tier bat) but it ain't gon' make up for losin' dey whole staff. Y&Y gon' steamroll da pitching cats and probably win 4-5 hitting cats too. Pick: Y&Y by way of a full crawfish boil wit' shrimp, sausage, AND corn, mais oui, that's true."
+    }
+  ]
+}
