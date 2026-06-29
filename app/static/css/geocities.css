@@ -279,6 +279,40 @@ body {
 .badge-strength { background: #004d00; color: #00FF00; border: 1px solid #00AA00; }
 .badge-weakness { background: #4d0000; color: #FF6666; border: 1px solid #AA0000; }
 
+.playoff-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+    font-family: monospace;
+}
+.playoff-tag {
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #FFD700;
+    font-weight: bold;
+    white-space: nowrap;
+    text-shadow: 1px 1px 0 #000;
+}
+.playoff-bar {
+    flex: 0 0 110px;
+    height: 11px;
+    background: #1a1a3a;
+    border: 1px solid #333366;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.playoff-bar-fill { display: block; height: 100%; border-radius: 1px; }
+.playoff-pct { font-size: 12px; font-weight: bold; min-width: 40px; text-shadow: 1px 1px 0 #000; }
+.playoff-bar-fill.po-high { background: #00CC44; }
+.playoff-bar-fill.po-mid  { background: #FFB000; }
+.playoff-bar-fill.po-low  { background: #FF6A00; }
+.playoff-bar-fill.po-out  { background: #666; }
+.playoff-pct.po-high { color: #00FF66; }
+.playoff-pct.po-mid  { color: #FFC640; }
+.playoff-pct.po-low  { color: #FF8A3C; }
+.playoff-pct.po-out  { color: #999; }
+
 .rank-blurb {
     padding: 10px 14px;
     color: #CCCCCC;

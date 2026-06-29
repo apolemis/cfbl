@@ -72,7 +72,20 @@
                 </div>
                 <div class="rank-team-info">
                     <div class="rank-team-name">{{ team.team_name }}</div>
-                    {% if team.season_record %}
+                    {% if team.seed is defined %}
+                    <div class="rank-meta">
+                        Seed #{{ team.seed }} | {{ team.cat_record }}{% if team.power_score is defined %} | Power: {{ team.power_score }}{% endif %}
+                    </div>
+                    {% if team.playoff_odds is defined %}
+                    {% set po = team.playoff_odds %}
+                    {% set potier = 'po-high' if po >= 85 else ('po-mid' if po >= 25 else ('po-low' if po >= 1 else 'po-out')) %}
+                    <div class="playoff-row">
+                        <span class="playoff-tag">&#127942; PLAYOFF ODDS</span>
+                        <span class="playoff-bar"><span class="playoff-bar-fill {{ potier }}" style="width: {{ po }}%;"></span></span>
+                        <span class="playoff-pct {{ potier }}">{% if po >= 99.5 %}&gt;99%{% elif po > 0 and po < 1 %}&lt;1%{% elif po == 0 %}0%{% else %}{{ po|round|int }}%{% endif %}</span>
+                    </div>
+                    {% endif %}
+                    {% elif team.season_record %}
                     <div class="rank-meta">
                         Record: {{ team.season_record }} ({{ team.cat_record }}){% if team.power_score is defined %} | Power: {{ team.power_score }}{% if team.heat_score is defined %} | Heat: {{ "%+.0f"|format(team.heat_score) }}{% endif %}{% elif team.blend_score is defined %} | Preseason: #{{ team.preseason_rank }} | Roto: #{{ team.roto_rank }} | Blend: {{ "%.2f"|format(team.blend_score) }}{% endif %}
                     </div>
